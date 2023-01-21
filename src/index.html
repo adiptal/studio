@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta http-equiv="Expires" content="private, max-age=3600, must-revalidate">
+    <meta http-equiv="Cache-control" content="private, max-age=3600, must-revalidate">
+
+    <title>Adiptal Editor</title>
+
+    <!-- FUNCTIONALITY  -->
+    <link rel="stylesheet" href="assets/css/main.min.css"/>
+
+    <link rel="stylesheet" href="ui/assets/css/default.min.css"/>
+</head>
+<body spellcheck="false">
+    <div class="fq">
+        <!-- EDITOR INSTANCE -->
+        <div class="fr"></div>
+        <!-- TOAST MESSAGE -->
+        <div class="gu"></div>
+
+
+
+        <!-- CONTEXT MENU -->
+        <div class="gi fe">
+            <div class="gz">
+                <button aria-label="Edit" class="ff gm" data-by="ep">
+                    <i class="fas fa-pen"></i>
+                </button>
+                <button aria-label="Move" class="ff" data-by="eq">
+                    <i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i>
+                </button>
+                <button aria-label="Clone" class="ff" data-by="er">
+                    <i class="far fa-clone"></i>
+                </button>
+                <button aria-label="Delete" class="ff" data-by="el">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="gi fd">
+            <div class="gn">
+                <button>Rows&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                <ul>
+                    <li>
+                        <div class="gz">
+                            <button class="ge" data-by="THEAD">Header</button>
+                            <button class="ge" data-by="TBODY">Body</button>
+                            <button class="ge" data-by="TFOOT">Footer</button>
+                        </div>
+                    </li>
+                    <li><button class="ge" data-by="ec">Add Row Above</button></li>
+                    <li><button class="ge" data-by="ed">Add Row Below</button></li>
+                    <li><button class="ge" data-by="ei">Delete Row</button></li>
+                </ul>
+            </div>
+            <div class="gn">
+                <button>Columns&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                <ul>
+                    <li><button class="gf" data-by="ef">Add Column Left</button></li>
+                    <li><button class="gf" data-by="eg">Add Column Right</button></li>
+                    <li><button class="gf" data-by="ej">Delete Column</button></li>
+                </ul>
+            </div>
+            <div class="gn">
+                <button>Cells&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                <ul>
+                    <li>
+                        <div class="gz">
+                            <button class="je" data-by="LEFT" aria-label="Left"><i class="fas fa-align-left"></i></button>
+                            <button class="je" data-by="CENTER" aria-label="Center"><i class="fas fa-align-center"></i></button>
+                            <button class="je" data-by="RIGHT" aria-label="Right"><i class="fas fa-align-right"></i></button>
+                            <button class="je" data-by="JUSTIFY" aria-label="Justify"><i class="fas fa-align-justify"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="gi fi">
+            <ul>
+                <li><button class="fj" data-by="el">Delete</button></li>
+                <li><button class="fj gm" data-by="ek">Delete Selected</button></li>
+            </ul>
+        </div>
+
+        <div class="gi fg">
+            <div class="gn">
+                <button>Default Background&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                <ul>
+                    <li>
+                        <div class="gz">
+                            <input type="color" aria-label="Pick Color">
+                            <button class="fh" aria-label="Remove Format"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="gn">
+                <button>Dark Mode Background&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                <ul>
+                    <li>
+                        <div class="gz">
+                            <input type="color" aria-label="Pick Color">
+                            <button class="fh" aria-label="Remove Format"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="ji"></div>
+        <!-- END CONTEXT MENU -->
+
+
+
+        <!-- MODAL -->
+        <div class="go" data-bx="cj">
+            <div class="gp fl">
+                <header class="ih">
+                    <h2>Properties</h2>
+                </header>
+
+                <div class="ii">
+                    <div class="fp">
+                        <input type="text" required>
+                        <label>Title</label>
+                    </div>
+
+                    <div class="fp">
+                        <textarea required></textarea>
+                        <label>Description</label>
+                    </div>
+                </div>
+
+                <div class="iw">
+                    <ul>
+                        <li><button class="gs">Continue</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="go" data-bx="ck">
+            <div class="gp">
+                <header class="ih">
+                    <h2>Emojis</h2>
+                </header>
+
+                <div class="ii">
+                </div>
+
+                <div class="iw">
+                    <ul>
+                        <li class="gq">
+                            <div class="gn">
+                                <button><span>Categories</span>&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                                <ul></ul>
+                            </div>
+                        </li>
+
+                        <li><button class="gr">Cancel</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="go" data-bx="cl">
+            <div class="gp">
+                <header class="ih">
+                    <h2>Special Characters</h2>
+                </header>
+
+                <div class="ii">
+                </div>
+
+                <div class="iw">
+                    <ul>
+                        <li class="gq">
+                            <div class="gn">
+                                <button><span>Categories</span>&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                                <ul></ul>
+                            </div>
+                        </li>
+
+                        <li><button class="gr">Cancel</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="go" data-bx="cm">
+            <div class="gp">
+                <header class="ih">
+                    <h2>File Info</h2>
+                </header>
+
+                <div class="ii">
+                </div>
+
+                <div class="iw">
+                    <ul>
+                        <li><button class="gr">Close</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="go" data-bx="cn">
+            <div class="gp">
+                <header class="ih">
+                    <h2>Table</h2>
+                </header>
+
+                <div class="ii">
+                    <div class="fp">
+                        <input type="text" required>
+                        <label>Columns</label>
+                    </div>
+                </div>
+
+                <div class="iw">
+                    <ul>
+                        <li class="gq hl"><input class="hh" type="file" accept=".csv"><button class="fn">Import CSV</button></li>
+                        <li><button class="gr">Cancel</button></li>
+                        <li><button class="gs">Insert</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="go" data-bx="co">
+            <div class="gp">
+                <header class="ih">
+                    <h2>Media Embed</h2>
+                </header>
+
+                <div class="ii">
+                    <div class="fp">
+                        <input type="text" required>
+                        <label>Link</label>
+                    </div>
+                </div>
+
+                <div class="iw">
+                    <ul>
+                        <li class="gq hl"><button class="fn">Html Embed</button></li>
+                        <li><button class="gr">Cancel</button></li>
+                        <li><button class="gs">Insert</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="go" data-bx="cp">
+            <div class="gp">
+                <header class="ih">
+                    <h2>Link</h2>
+                </header>
+
+                <div class="ii">
+                    <div class="fp">
+                        <input type="text" required>
+                        <label>Link</label>
+                    </div>
+
+                    <div class="fp">
+                        <input type="text" required>
+                        <label>Title</label>
+                    </div>
+
+                    <button class="gt">New Tab <span data-cb="0"></span></button>
+                </div>
+
+                <div class="iw">
+                    <ul>
+                        <li><button class="gr">Cancel</button></li>
+                        <li><button class="gs">Insert</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="go" data-bx="cq">
+            <div class="gp fl">
+                <header class="ih">
+                    <h2>Images</h2>
+                </header>
+
+                <div class="ii">
+                    <div class="gw">
+                        <div class="fp">
+                            <input type="text" required>
+                            <label>Link</label>
+                        </div>
+                        <button class="hf">Add Image</button>
+                    </div>
+                    <div class="gw">
+                        <div class="gx"></div>
+                        <div class="he"></div>
+                    </div>
+                </div>
+
+                <div class="iw">
+                    <input class="hg" type="file" accept="image/*" multiple>
+                    <ul>
+                        <li class="gq hl">
+                            <div class="it">
+                                <button><span data-bx="Type">Type</span>&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                                <ul>
+                                    <li><button data-by="gallery">Gallery</button></li>
+                                    <li><button data-by="carousel">Carousel</button></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="gq"><button class="fn" aria-label="Upload Image"><i class="fas fa-upload"></i></button></li>
+                        <li><button class="gr">Cancel</button></li>
+                        <li><button class="gs">Insert</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="go" data-bx="cr">
+            <div class="gp fl">
+                <header class="ih">
+                    <h2>Columns</h2>
+                </header>
+
+                <div class="ii"></div>
+
+                <div class="iw">
+                    <ul>
+                        <li class="gq"><button class="fn" aria-label="Add Page"><i class="fas fa-plus"></i></button></li>
+                        <li><button class="gr">Cancel</button></li>
+                        <li><button class="gs">Insert</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="go" data-bx="cs">
+            <div class="gp fl">
+                <header class="ih">
+                    <h2>Accordion</h2>
+                </header>
+
+                <div class="ii"></div>
+
+                <div class="iw">
+                    <ul>
+                        <li class="gq"><button class="fn" aria-label="Add Page"><i class="fas fa-plus"></i></button></li>
+                        <li><button class="gr">Cancel</button></li>
+                        <li><button class="gs">Insert</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="go" data-bx="ct">
+            <div class="gp fl">
+                <header class="ih">
+                    <h2>Tab</h2>
+                </header>
+
+                <div class="ii"></div>
+
+                <div class="iw">
+                    <ul>
+                        <li class="gq hl">
+                            <div class="it">
+                                <button><span data-bx="Type">Type</span>&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                                <ul>
+                                    <li><button data-by="vertical">Vertical</button></li>
+                                    <li><button data-by="horizontal">Horizontal</button></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gq"><button class="fn" aria-label="Add Page"><i class="fas fa-plus"></i></button></li>
+                        <li><button class="gr">Cancel</button></li>
+                        <li><button class="gs">Insert</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="go" data-bx="cu">
+            <div class="gp fl">
+                <header class="ih">
+                    <h2>Alert</h2>
+                </header>
+
+                <div class="ii"></div>
+
+                <div class="iw">
+                    <ul>
+                        <li class="gq hl">
+                            <div class="it">
+                                <button><span data-bx="Type">Type</span>&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                                <ul>
+                                    <li><button data-by="notice">Notice</button></li>
+                                    <li><button data-by="info">Info</button></li>
+                                    <li><button data-by="success">Success</button></li>
+                                    <li><button data-by="warning">Warning</button></li>
+                                    <li><button data-by="danger">Danger</button></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><button class="gr">Cancel</button></li>
+                        <li><button class="gs">Insert</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="go" data-bx="fb">
+            <div class="gp">
+                <header class="ih">
+                    <h2>Edit Disabled</h2>
+                </header>
+
+                <div class="ii">
+                    <p>File is being edited by <span></span>.</p>
+                </div>
+
+                <div class="iw">
+                    <ul>
+                        <li><button class="gr">Close</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="go" data-bx="ez">
+            <div class="gp fl">
+                <header class="ih">
+                    <h2>Key Shortcuts</h2>
+                </header>
+
+                <div class="ii">
+                    <div class="adiptal-ui">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Windows / Linux</th>
+                                    <th>Mac</th>
+                                    <th>Action</th>
+                                    <th>Available</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+ <code>s</code></td>
+                                    <td><code>cmd</code>&nbsp;+ <code>s</code></td>
+                                    <td>Save</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>S</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>S</code></td>
+                                    <td>Autosave&nbsp;( Toggle on/off )</td>
+                                    <td><i class="far fa-gem"></i>&nbsp;<strong>Pro</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>f</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>f</code></td>
+                                    <td>Find and Replace</td>
+                                    <td><i class="far fa-gem"></i>&nbsp;<strong>Pro</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>p</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>p</code></td>
+                                    <td>Print</td>
+                                    <td><i class="far fa-gem"></i>&nbsp;<strong>Pro</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>I</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+ <code>I</code></td>
+                                    <td>Import</td>
+                                    <td><i class="far fa-gem"></i>&nbsp;<strong>Pro</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>E</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>E</code></td>
+                                    <td>Export</td>
+                                    <td><i class="far fa-gem"></i>&nbsp;<strong>Pro</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>F</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>F</code></td>
+                                    <td>Fullscreen ( Toggle on/off )</td>
+                                    <td><i class="far fa-gem"></i>&nbsp;<strong>Pro</strong></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><strong>Popup / Modal</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><code>Esc</code></td>
+                                    <td><code>Esc</code></td>
+                                    <td>Cancel</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>Enter</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>Enter</code></td>
+                                    <td>Submit</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><strong>Insert Element </strong></td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>H</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>H</code></td>
+                                    <td>Heading</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>P</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+ <code>P</code></td>
+                                    <td>Paragraph</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>B</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>B</code></td>
+                                    <td>Blockquote</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>alt</code>&nbsp;+&nbsp;<code>h</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>alt</code>&nbsp;+&nbsp;<code>h</code></td>
+                                    <td>Html&nbsp;Embed</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+ <code>alt</code>&nbsp;+&nbsp;<code>p</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>alt</code>&nbsp;+ <code>p</code></td>
+                                    <td>Preformatted</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>U</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>U</code></td>
+                                    <td>Unorder List</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>O</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>O</code></td>
+                                    <td>Order List</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>C</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>C</code></td>
+                                    <td>Check List</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>+&nbsp;<code>alt</code>&nbsp;+&nbsp;<code>P</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>+&nbsp;<code>alt</code>&nbsp;+&nbsp;<code>P</code></td>
+                                    <td>Page Break</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><strong>Text Style </strong></td>
+                                </tr>
+                                <tr>
+                                    <td><code>shift</code>&nbsp;+&nbsp;<code>Enter</code></td>
+                                    <td><code>shift</code>&nbsp;+&nbsp;<code>Enter</code></td>
+                                    <td>Enter/New Line</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>b</code></td>
+                                    <td><code>cmd</code>&nbsp;+ <code>b</code></td>
+                                    <td>Bold</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>i</code></td>
+                                    <td><code>cmd</code>&nbsp;+ <code>i</code></td>
+                                    <td>Italic</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>u</code></td>
+                                    <td><code>cmd</code>&nbsp;+ <code>u</code></td>
+                                    <td>Underline</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>d</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>d</code></td>
+                                    <td>Strikethrough</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>Arrow Up</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>Arrow Up</code></td>
+                                    <td>Superscript</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>Arrow Down</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>Arrow Down</code></td>
+                                    <td>Subscript</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>h</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>h</code></td>
+                                    <td>Inline Code</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>]</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>]</code></td>
+                                    <td>Increase Indent</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>[</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>[</code></td>
+                                    <td>Decrease Indent</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>l</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>l</code></td>
+                                    <td>Align Left</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>e</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>e</code></td>
+                                    <td>Align Center</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>r</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>r</code></td>
+                                    <td>Align Right</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>j</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>j</code></td>
+                                    <td>Align Justify</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>R</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>R</code></td>
+                                    <td>Paragraph Direction ( RTL / LTR )</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+ <code>L</code></td>
+                                    <td><code>cmd</code>&nbsp;+ <code>shift</code>&nbsp;+ <code>L</code></td>
+                                    <td>Create/Edit&nbsp;Inline Link</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+ <code>alt</code> +&nbsp;<code>R</code></td>
+                                    <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+ <code>alt</code> +&nbsp;<code>R</code></td>
+                                    <td>Remove Format</td>
+                                    <td>Free</td>
+                                </tr>
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="iw">
+                    <ul>
+                        <li><button class="gr">Close</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL -->
+    </div>
+
+    <!-- FUNCTIONALITY  -->
+    <script src="ui/assets/js/default.min.js"></script>
+    <script src="assets/js/functionality.min.js"></script>
+</body>
+</html>
