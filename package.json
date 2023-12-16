@@ -1,0 +1,16 @@
+{
+  "name": "@adiptal/studio",
+  "version": "1.0.0",
+  "description": "Adiptal Studio is an iframe based self-host headless page builder to integrate in any cms/framework. It's feature-rich design and gives clean output to design responsive pages.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adiptal/studio.git"
+  },
+  "author": "Aditya Patel https://github.com/adiptal/",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adiptal/studio/issues"
+  },
+  "homepage": "https://github.com/adiptal/studio#readme"
+}

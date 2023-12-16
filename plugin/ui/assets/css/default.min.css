@@ -1,0 +1,605 @@
+/*
+        Product            : Adiptal Studio
+        All Information    : https://github.com/adiptal/studio
+*/
+
+
+
+/* --------------------- DEFAULT --------------------- */
+:root{
+    --primary: #282828;
+    --primary-rgba: 40,40,40;
+
+    --secondary: #FFFFFF;
+    --secondary-rgba: 255,255,255;
+
+    --blue: #1976d2;
+    --blue-rgba: 25,118,210;
+
+    --red: #e53935;
+    --red-rgba: 229,57,53;
+
+    --yellow: #ffb300;
+    --yellow-rgba: 255,179,0;
+
+    --green: #66bb6a;
+    --green-rgba: 102,187,106;
+
+    --grey-1: #EEEEEE;
+    --grey-2: #DDDDDD;
+    --grey-3: #AAAAAA;
+
+    --weight-normal: 400;
+    --weight-strong-1: 500;
+    --weight-strong-2: 700;
+}
+
+.st-dark-mode:root{
+    color-scheme: dark;
+    --primary: #DDDDDD;
+    --primary-rgba: 221,221,221;
+
+    --secondary: #252525;
+    --secondary-rgba: 37,37,37;
+
+    --blue: #64b5f6;
+    --blue-rgba: 100,181,246;
+
+    --red: #ef5350;
+    --red-rgba: 239,83,80;
+
+    --yellow: #dbc070;
+    --yellow-rgba: 219,192,112;
+
+    --green: #81c784;
+    --green-rgba: 129,199,132;
+
+    --grey-1: #353535;
+    --grey-2: #454545;
+    --grey-3: #555555;
+}
+
+*{
+    overflow-wrap: break-word;
+}
+
+[data-dir="rtl"],
+[data-dir="rtl"] *{
+    text-align: initial;
+    direction: rtl;
+}
+
+pre{
+    position: relative;
+    white-space: pre-wrap;
+}
+
+pre .copy_to_clipboard{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var( --grey-1 );
+    padding: .25rem .5rem;
+}
+
+.hljs{
+    background: var( --secondary ) !important;
+}
+
+.hljs *{
+    color: inherit;
+}
+
+ul,
+ol{
+    list-style: none;
+}
+/* ------------------------- END DEFAULT ------------------------- */
+
+
+
+.adiptal-ui{
+    display: flex;
+    flex-direction: column;
+    container: adiptal-ui / inline-size;
+}
+
+.adiptal-ui *{
+    line-height: 1.6;
+}
+
+.adiptal-ui p,
+.adiptal-ui li,
+.adiptal-ui td,
+.adiptal-ui th,
+.adiptal-ui pre>code,
+.adiptal-ui blockquote,
+.adiptal-ui .il:not([data-cr="eb"]){
+    color: rgba( var( --primary-rgba ), .85);
+}
+
+
+/* --------------------- TITLE --------------------- */
+.adiptal-ui>header{
+    margin-bottom: 1rem;
+}
+
+.adiptal-ui>header h1{
+    padding: 0 1rem;
+    font-size: 3rem;
+    font-weight: var( --weight-strong-2 );
+    letter-spacing: .05rem;
+}
+
+@container adiptal-ui (width < 768px)
+{
+    .adiptal-ui>header h1{
+        font-size: 2.25rem;
+    }
+}
+
+
+/* --------------------- SECTION --------------------- */
+.adiptal-ui>section{
+    position: relative;
+    padding: 3rem 0;
+}
+
+.adiptal-ui>section:not(:first-of-type){
+    box-shadow: 0 -.05rem rgba( var( --primary-rgba ), .1);
+}
+
+.adiptal-ui section>*,
+.adiptal-ui section .columns>div>*,
+.adiptal-ui section .carousel>*:not(.navigation)>*,
+.adiptal-ui section .accordion>div>*>*,
+.adiptal-ui section .tab>div>*>*,
+.adiptal-ui section .container>*{
+    position: relative;
+    margin: 1.5rem;
+    z-index: 1;
+}
+
+@container adiptal-ui (width >= 768px){
+    .adiptal-ui>section>*{
+        margin: 1.5rem 15%;
+    }
+}
+
+
+
+.adiptal-ui section .columns>div,
+.adiptal-ui section .carousel>*:not(.navigation),
+.adiptal-ui section .accordion>*>button.active+*,
+.adiptal-ui section .tab>.tab-body>*,
+.adiptal-ui section .container{
+    position: relative;
+    overflow: auto;
+}
+
+
+/* --------------------- ALIGN --------------------- */
+[data-align="CENTER"],
+[data-align="CENTER"] *{
+    text-align: center;
+}
+
+[data-align="JUSTIFY"],
+[data-align="JUSTIFY"] *{
+    text-align: justify;
+}
+
+[data-align="RIGHT"],
+[data-align="RIGHT"] *{
+    text-align: right;
+}
+
+
+/* --------------------- STYLING --------------------- */
+.adiptal-ui del,
+.adiptal-ui sup,
+.adiptal-ui sub,
+.adiptal-ui em,
+.adiptal-ui strong,
+.adiptal-ui code,
+.adiptal-ui a,
+.adiptal-ui mark{
+    display: inline;
+    font: inherit;
+    color: inherit;
+}
+
+.adiptal-ui sup,
+.adiptal-ui sub{
+    font-size: .85rem;
+}
+
+.adiptal-ui em.i{
+    font-style: italic;
+}
+
+.adiptal-ui em.ul,
+.adiptal-ui a{
+    text-decoration: underline;
+}
+
+.adiptal-ui strong{
+    font-weight: var( --weight-strong-1 );
+}
+
+.adiptal-ui mark{
+    background: none;
+}
+
+.adiptal-ui code:not(.hljs){
+    padding: 0 .25rem .15rem;
+    border-radius: .25rem;
+    background: rgba( var( --primary-rgba ), .05);
+    box-shadow: 0 0 0 .1rem rgba( var( --primary-rgba ), .1);
+}
+
+.adiptal-ui a{
+    color: var( --blue );
+}
+
+
+/* --------------------- HEADING --------------------- */
+.adiptal-ui h2{
+    font-weight: var( --weight-strong-1 );
+}
+
+.adiptal-ui h2,
+.adiptal-ui h3,
+.adiptal-ui h4{
+    font-size: 1.6rem;
+}
+
+@container adiptal-ui (width < 768px)
+{
+    .adiptal-ui h2,
+    .adiptal-ui h3,
+    .adiptal-ui h4{
+        font-size: 1.5rem;
+    }
+}
+
+.adiptal-ui h3:not(:first-child),
+.adiptal-ui h4:not(:first-child){
+    margin-top: 3rem;
+}
+
+
+/* --------------------- ASIDE --------------------- */
+.adiptal-ui aside *{
+    min-width: unset !important;
+    max-width: 100% !important;
+}
+
+
+/* --------------------- dm --------------------- */
+.adiptal-ui section>a,
+.adiptal-ui section div:not(.il)>a{
+    display: block;
+    text-decoration: none;
+    color: rgba( var( --primary-rgba ), .85);
+}
+
+
+/* --------------------- PRE --------------------- */
+.adiptal-ui figure.pre{
+    box-shadow: 0 0 0 .05rem rgba( var( --primary-rgba ), .2);
+}
+
+.adiptal-ui figure.pre figcaption{
+    padding: .35rem 1rem;
+    background: rgba( var( --primary-rgba ), .05);
+}
+
+.adiptal-ui figure.pre>pre>code{
+    padding: 1.5rem;
+}
+
+
+/* --------------------- dn --------------------- */
+.adiptal-ui figure.image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* --------------------- BLOCKQUOTE --------------------- */
+.adiptal-ui figure.blockquote{
+    position: relative;
+}
+
+.adiptal-ui figure blockquote{
+    padding: 1rem;
+}
+
+.adiptal-ui figure.blockquote figcaption{
+    padding: .35rem 1rem;
+}
+
+
+/* --------------------- CAPTION --------------------- */
+.adiptal-ui figure figcaption{
+    font-style: italic;
+    color: rgba( var( --primary-rgba ), .6);
+}
+
+.adiptal-ui figure cite{
+    font-size: inherit;
+    color: inherit;
+}
+
+
+/* --------------------- LISTS --------------------- */
+.adiptal-ui li{
+    margin: .75rem 0;
+    margin-left: 1.5rem;
+}
+
+.adiptal-ui section>ul:not(.checklist),
+.adiptal-ui section .columns>div>ul:not(.checklist),
+.adiptal-ui section .carousel>*>ul:not(.checklist),
+.adiptal-ui section .accordion>div>*>ul:not(.checklist),
+.adiptal-ui section .tab>div>*>ul:not(.checklist),
+.adiptal-ui section .container>ul:not(.checklist){
+    list-style-type: disc;
+}
+
+.adiptal-ui section>ol,
+.adiptal-ui section .columns>div>ol,
+.adiptal-ui section .carousel>*>ol,
+.adiptal-ui section .accordion>div>*>ol,
+.adiptal-ui section .tab>div>*>ol,
+.adiptal-ui section .container>ol{
+    list-style-type: decimal;
+}
+
+.adiptal-ui li::marker{
+    font-weight: var( --weight-strong-1 );
+}
+
+.adiptal-ui ul.checklist li{
+    position: relative;
+}
+
+.adiptal-ui ul.checklist li::before{
+    content: '\025A2';
+}
+
+.adiptal-ui ul.checklist li.checked::before{
+    content: '\2713';
+}
+
+.adiptal-ui ul.checklist li::before,
+.hg ul.checklist button{
+    position: absolute;
+    left: -1.5rem;
+}
+
+.hg ul.checklist button{
+    top: .35rem;
+    padding: .45rem;
+    z-index: 1;
+}
+
+
+/* --------------------- dk --------------------- */
+.adiptal-ui .table>div,
+.adiptal-ui .im{
+    table-layout: fixed;
+    overflow-x: auto;
+}
+
+.adiptal-ui table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.adiptal-ui table,
+.adiptal-ui table td,
+.adiptal-ui table th{
+    border: solid .05rem rgba( var( --primary-rgba ), .2);
+}
+
+.adiptal-ui table td,
+.adiptal-ui table th{
+    padding: .5rem 1rem;
+}
+
+.adiptal-ui table th{
+    font-weight: var( --weight-strong-1 );
+}
+
+
+/* ------------------------- MEDIA EMBED ------------------------- */
+.adiptal-ui .media-embed.spotify,
+.adiptal-ui .media-embed.vimeo,
+.adiptal-ui .media-embed.youtube,
+.adiptal-ui .media-embed.soundcloud{
+    aspect-ratio: 16/9;
+}
+
+.adiptal-ui .media-embed.twitter *{
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.adiptal-ui .media-embed.spotify iframe,
+.adiptal-ui .media-embed.vimeo iframe,
+.adiptal-ui .media-embed.youtube iframe,
+.adiptal-ui .media-embed.soundcloud iframe{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* --------------------- dp --------------------- */
+.adiptal-ui .columns{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.adiptal-ui .columns>*{
+    flex: 0 0 50%;
+}
+
+@container adiptal-ui (width < 768px)
+{
+    .adiptal-ui .columns>*{
+        flex: 0 0 100%;
+    }
+}
+
+
+/* ------------------------- dt ------------------------- */
+.adiptal-ui .carousel{
+    box-shadow: 0 0 0 .05rem rgba( var( --primary-rgba ), .2);
+}
+
+.adiptal-ui .carousel>.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: .5rem;
+    background: rgba( var( --primary-rgba ), .05);
+}
+
+.adiptal-ui .carousel>.navigation button{
+    background: rgba( var( --primary-rgba ), .05);
+    padding: .25rem .5rem;
+    font-weight: var( --weight-strong-1 );
+}
+
+.adiptal-ui .carousel>.navigation .prev{
+    transform: rotateY(180deg);
+}
+
+.adiptal-ui .carousel>*:not(.navigation):not(:first-of-type){
+    display: none;
+}
+
+
+/* --------------------- dq --------------------- */
+.adiptal-ui .accordion{
+    box-shadow: 0 0 0 .05rem rgba( var( --primary-rgba ), .2);
+}
+
+.adiptal-ui .accordion>*:not(:last-of-type){
+    box-shadow: inset 0 -.05rem rgba( var( --primary-rgba ), .2);
+}
+
+.adiptal-ui .accordion>*>button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: .75rem 1.5rem;
+}
+
+.adiptal-ui .accordion>*>button::after{
+    content: '+';
+    margin-bottom: .25rem;
+    line-height: 0;
+    font-size: 1.5rem;
+    font-weight: var( --weight-strong-1 );
+    color: rgba( var( --primary-rgba ), .6);
+}
+
+.adiptal-ui .accordion>*>button.active{
+    font-weight: var( --weight-strong-1 );
+    background: rgba( var( --primary-rgba ), .05);
+}
+
+.adiptal-ui .accordion>*>button.active::after{
+    content: '-';
+    font-size: 2rem;
+}
+
+.adiptal-ui .accordion>*>button:not(.active)+*{
+    display: none;
+}
+
+
+/* --------------------- dr --------------------- */
+.adiptal-ui .tab{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 0 .05rem rgba( var( --primary-rgba ), .2);
+}
+
+.adiptal-ui .tab>.tab-heading{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    overflow: auto;
+    box-shadow: 0 .05rem rgba( var( --primary-rgba ), .2);
+}
+
+.adiptal-ui .tab>.tab-heading>li{
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 .05rem rgba( var( --primary-rgba ), .2);
+}
+
+.adiptal-ui .tab>.tab-heading>li.active{
+    background: rgba( var( --primary-rgba ), .05);
+}
+
+.adiptal-ui .tab>.tab-heading>li button{
+    width: 100%;
+    padding: .75rem 1.5rem;
+    text-align: center;
+}
+
+.adiptal-ui .tab>.tab-heading>li.active button{
+    font-weight: var( --weight-strong-1 );
+}
+
+.adiptal-ui .tab>.tab-body{
+    width: 100%;
+}
+
+.adiptal-ui .tab>.tab-body>*{
+    display: none;
+}
+
+@container adiptal-ui (width >= 768px)
+{
+    .adiptal-ui .tab.vertical>.tab-heading{
+        flex-direction: column;
+        flex: 0 0 25%;
+        box-shadow: .05rem 0 rgba( var( --primary-rgba ), .2);
+    }
+
+    .adiptal-ui .tab.vertical>.tab-body{
+        flex: 0 0 75%;
+    }
+
+    .adiptal-ui .tab.vertical>.tab-heading>li button{
+        text-align: left;
+    }
+}
+
+
+
+/* --------------------- DIRECTION RIGHT --------------------- */
+.adiptal-ui li[data-dir]{
+    margin-left: unset;
+    margin-right: 1.5rem;
+}
+
+.adiptal-ui ul.checklist li[data-dir]::before,
+.hg ul.checklist [data-dir] button{
+    left: unset;
+    right: -1.5rem;
+}

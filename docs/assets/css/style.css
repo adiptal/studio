@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+:root{
+    --font-name: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-size: 16px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border-radius: .15rem;
+    box-sizing: border-box;
+
+    color: var( --primary );
+    font-family: var( --font-name );
+    font-size: var( --font-size );
+    font-weight: var( --weight-normal );
+    text-align: left;
+    letter-spacing: .025rem;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: auto;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body{
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+a,
+button,
+input,
+textarea,
+iframe{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background: transparent;
+    resize: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+a,
+button{
+    display: inline-block;
+    cursor: pointer;
+    transition: all .15s;
+}
+
+a *,
+button *,
+i{
+    pointer-events: none;
+}
+
+.hr{
+    position: relative;
+    padding: .025rem;
+    width:  100%;
+    height: 0;
+    background: rgba( var( --primary-rgba ), .15);
+}
+
+[name*="studio-iframe"]{
+    width: 100%;
+    height: 80vh;
+    display: none;
+}
+
+.adiptal-ui>header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.adiptal-ui>header{
+    margin: 1.5rem;
+}
+
+h1{
+    flex: 1 1 100%;
+    padding: unset !important;
+}
+
+.adiptal-ui header>button{
+    border-radius: 1rem;
+    padding: .75rem;
+    background: var( --grey-2 );
+    box-shadow: 0 .1rem .25rem .1rem rgba( var( --primary-rgba ), .2);
+    overflow: hidden;
+    z-index: 21;
+}
+
+.adiptal-ui header>.edit-page{
+    display: none;
+}
+
+
+[name*="studio-iframe"].fullscreen{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}

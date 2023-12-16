@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta http-equiv="Expires" content="private, max-age=3600, must-revalidate">
+    <meta http-equiv="Cache-control" content="private, max-age=3600, must-revalidate">
+
+    <title>Adiptal Studio</title>
+
+    <!-- FUNCTIONALITY  -->
+    <link rel="stylesheet" href="assets/css/main.min.css"/>
+
+    <!-- PRO  -->
+    <link rel="stylesheet" href="https://web.adiptal.com/plugin/studio/assets/css/pro.min.css"/>
+
+    <link rel="stylesheet" href="ui/assets/css/default.min.css"/>
+</head>
+<body spellcheck="false">
+    <div class="hf">
+        <style class="css_styles" data-css_style="{}"></style>
+        <!-- EDITOR INSTANCE -->
+        <div class="hg"></div>
+        <!-- TOAST MESSAGE -->
+        <div class="je"></div>
+
+
+
+        <!-- CONTEXT MENU -->
+        <div class="is gn">
+            <div class="ji">
+                <div class="ix gt">
+                    <button><strong data-cm="style"></strong>&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                    <ul>
+                        <li><button class="go" data-cs="horizontal" data-cq="fs" data-cr="dr" data-cm="horizontal"></button></li>
+                        <li><button class="go" data-cs="vertical" data-cq="fs" data-cr="dr" data-cm="vertical"></button></li>
+                    </ul>
+                </div>
+                <button data-cn="edit" class="go hb" data-cq="fr">
+                    <i class="fas fa-pen"></i>
+                </button>
+                <button data-cn="delete" class="go" data-cq="fn">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="is gm">
+            <div class="ix">
+                <button data-cm="rows">&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                <ul>
+                    <li>
+                        <div class="ji">
+                            <button class="io" data-cq="THEAD" data-cm="header"></button>
+                            <button class="io" data-cq="TBODY" data-cm="body"></button>
+                            <button class="io" data-cq="TFOOT" data-cm="footer"></button>
+                        </div>
+                    </li>
+                    <li><button class="io" data-cq="ff" data-cm="add_row_above"></button></li>
+                    <li><button class="io" data-cq="fg" data-cm="add_row_below"></button></li>
+                    <li><button class="io" data-cq="fl" data-cm="delete_row"></button></li>
+                </ul>
+            </div>
+            <div class="ix">
+                <button data-cm="columns">&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                <ul>
+                    <li><button class="ip" data-cq="fi" data-cm="add_column_left"></button></li>
+                    <li><button class="ip" data-cq="fj" data-cm="add_column_right"></button></li>
+                    <li><button class="ip" data-cq="fm" data-cm="delete_column"></button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="is gx">
+            <ul>
+                <li><button class="gy" data-cq="fn" data-cm="delete"></button></li>
+            </ul>
+        </div>
+
+        <div class="is gu">
+            <div class="ji">
+                <div class="ix">
+                    <button data-cn="move_section"><i class="fas fa-arrows-alt"></i></button>
+                    <ul>
+                        <li><button class="gv" data-cq="dw" data-cm="before"></button></li>
+                        <li><button class="gv" data-cq="dx" data-cm="after"></button></li>
+                    </ul>
+                </div>
+                <div class="ix">
+                    <button data-cn="add_section"><i class="fas fa-plus"></i></button>
+                    <ul>
+                        <li><button class="gv" data-cq="du" data-cm="before"></button></li>
+                        <li><button class="gv" data-cq="dv" data-cm="after"></button></li>
+                    </ul>
+                </div>
+                <button data-cn="delete_section" class="gv" data-cq="fn">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="ln"></div>
+        <!-- END CONTEXT MENU -->
+
+
+
+        <!-- DATALIST TAGS WITH PREDEFINED VALUES -->
+        <datalist id="og">
+            <option value=":active"></option>
+            <option value=":checked"></option>
+            <option value=":disabled"></option>
+            <option value=":empty"></option>
+            <option value=":enabled"></option>
+            <option value=":first-child"></option>
+            <option value=":first-of-type"></option>
+            <option value=":focus"></option>
+            <option value=":hover"></option>
+            <option value=":in-range"></option>
+            <option value=":invalid"></option>
+            <option value=":lang(language)"></option>
+            <option value=":last-child"></option>
+            <option value=":last-of-type"></option>
+            <option value=":link"></option>
+            <option value=":not(selector)"></option>
+            <option value=":nth-child(n)"></option>
+            <option value=":nth-last-child(n)"></option>
+            <option value=":nth-last-of-type(n)"></option>
+            <option value=":nth-of-type(n)"></option>
+            <option value=":only-of-type"></option>
+            <option value=":only-child"></option>
+            <option value=":optional"></option>
+            <option value=":out-of-range"></option>
+            <option value=":read-only"></option>
+            <option value=":read-write"></option>
+            <option value=":required"></option>
+            <option value=":root"></option>
+            <option value=":target"></option>
+            <option value=":valid"></option>
+            <option value=":visited"></option>
+            <option value="::after"></option>
+            <option value="::before"></option>
+            <option value="::first-letter"></option>
+            <option value="::first-line"></option>
+            <option value="::marker"></option>
+            <option value="::selection"></option>
+        </datalist>
+
+        <datalist id="ob">
+            <option value=":"></option>
+            <option value="<"></option>
+            <option value=">"></option>
+            <option value=">="></option>
+            <option value="<="></option>
+        </datalist>
+
+        <datalist id="oc">
+            <option value="550px"></option>
+            <option value="768px"></option>
+            <option value="992px"></option>
+            <option value="1200px"></option>
+        </datalist>
+
+        <datalist id="od">
+            <option value="width"></option>
+            <option value="min-width"></option>
+            <option value="max-width"></option>
+            <option value="height"></option>
+            <option value="min-height"></option>
+            <option value="max-height"></option>
+        </datalist>
+
+        <datalist id="oe">
+            <option value="accent-color"></option>
+            <option value="align-content"></option>
+            <option value="align-items"></option>
+            <option value="align-self"></option>
+            <option value="all"></option>
+            <option value="animation"></option>
+            <option value="animation-delay"></option>
+            <option value="animation-direction"></option>
+            <option value="animation-duration"></option>
+            <option value="animation-fill-mode"></option>
+            <option value="animation-iteration-count"></option>
+            <option value="animation-name"></option>
+            <option value="animation-play-state"></option>
+            <option value="animation-timing-function"></option>
+            <option value="aspect-ratio"></option>
+            <option value="backdrop-filter"></option>
+            <option value="backface-visibility"></option>
+            <option value="background"></option>
+            <option value="background-attachment"></option>
+            <option value="background-blend-mode"></option>
+            <option value="background-clip"></option>
+            <option value="background-color"></option>
+            <option value="background-image"></option>
+            <option value="background-origin"></option>
+            <option value="background-position"></option>
+            <option value="background-position-x"></option>
+            <option value="background-position-y"></option>
+            <option value="background-repeat"></option>
+            <option value="background-size"></option>
+            <option value="block-size"></option>
+            <option value="border"></option>
+            <option value="border-block"></option>
+            <option value="border-block-color"></option>
+            <option value="border-block-end"></option>
+            <option value="border-block-end-color"></option>
+            <option value="border-block-end-style"></option>
+            <option value="border-block-end-width"></option>
+            <option value="border-block-start"></option>
+            <option value="border-block-start-color"></option>
+            <option value="border-block-start-style"></option>
+            <option value="border-block-start-width"></option>
+            <option value="border-block-style"></option>
+            <option value="border-block-width"></option>
+            <option value="border-bottom"></option>
+            <option value="border-bottom-color"></option>
+            <option value="border-bottom-left-radius"></option>
+            <option value="border-bottom-right-radius"></option>
+            <option value="border-bottom-style"></option>
+            <option value="border-bottom-width"></option>
+            <option value="border-collapse"></option>
+            <option value="border-color"></option>
+            <option value="border-end-end-radius"></option>
+            <option value="border-end-start-radius"></option>
+            <option value="border-image"></option>
+            <option value="border-image-outset"></option>
+            <option value="border-image-repeat"></option>
+            <option value="border-image-slice"></option>
+            <option value="border-image-source"></option>
+            <option value="border-image-width"></option>
+            <option value="border-inline"></option>
+            <option value="border-inline-color"></option>
+            <option value="border-inline-end"></option>
+            <option value="border-inline-end-color"></option>
+            <option value="border-inline-end-style"></option>
+            <option value="border-inline-end-width"></option>
+            <option value="border-inline-start"></option>
+            <option value="border-inline-start-color"></option>
+            <option value="border-inline-start-style"></option>
+            <option value="border-inline-start-width"></option>
+            <option value="border-inline-style"></option>
+            <option value="border-inline-width"></option>
+            <option value="border-left"></option>
+            <option value="border-left-color"></option>
+            <option value="border-left-style"></option>
+            <option value="border-left-width"></option>
+            <option value="border-radius"></option>
+            <option value="border-right"></option>
+            <option value="border-right-color"></option>
+            <option value="border-right-style"></option>
+            <option value="border-right-width"></option>
+            <option value="border-spacing"></option>
+            <option value="border-start-end-radius"></option>
+            <option value="border-start-start-radius"></option>
+            <option value="border-style"></option>
+            <option value="border-top"></option>
+            <option value="border-top-color"></option>
+            <option value="border-top-left-radius"></option>
+            <option value="border-top-right-radius"></option>
+            <option value="border-top-style"></option>
+            <option value="border-top-width"></option>
+            <option value="border-width"></option>
+            <option value="bottom"></option>
+            <option value="box-decoration-break"></option>
+            <option value="box-reflect"></option>
+            <option value="box-shadow"></option>
+            <option value="box-sizing"></option>
+            <option value="break-after"></option>
+            <option value="break-before"></option>
+            <option value="break-inside"></option>
+            <option value="caption-side"></option>
+            <option value="caret-color"></option>
+            <option value="@charset"></option>
+            <option value="clear"></option>
+            <option value="clip"></option>
+            <option value="clip-path"></option>
+            <option value="color"></option>
+            <option value="column-count"></option>
+            <option value="column-fill"></option>
+            <option value="column-gap"></option>
+            <option value="column-rule"></option>
+            <option value="column-rule-color"></option>
+            <option value="column-rule-style"></option>
+            <option value="column-rule-width"></option>
+            <option value="column-span"></option>
+            <option value="column-width"></option>
+            <option value="columns"></option>
+            <option value="content"></option>
+            <option value="counter-increment"></option>
+            <option value="counter-reset"></option>
+            <option value="counter-set"></option>
+            <option value="cursor"></option>
+            <option value="direction"></option>
+            <option value="display"></option>
+            <option value="empty-cells"></option>
+            <option value="filter"></option>
+            <option value="flex"></option>
+            <option value="flex-basis"></option>
+            <option value="flex-direction"></option>
+            <option value="flex-flow"></option>
+            <option value="flex-grow"></option>
+            <option value="flex-shrink"></option>
+            <option value="flex-wrap"></option>
+            <option value="float"></option>
+            <option value="font"></option>
+            <option value="@font-face"></option>
+            <option value="font-family"></option>
+            <option value="font-feature-settings"></option>
+            <option value="@font-feature-values"></option>
+            <option value="font-kerning"></option>
+            <option value="font-language-override"></option>
+            <option value="font-size"></option>
+            <option value="font-size-adjust"></option>
+            <option value="font-stretch"></option>
+            <option value="font-style"></option>
+            <option value="font-synthesis"></option>
+            <option value="font-variant"></option>
+            <option value="font-variant-alternates"></option>
+            <option value="font-variant-caps"></option>
+            <option value="font-variant-east-asian"></option>
+            <option value="font-variant-ligatures"></option>
+            <option value="font-variant-numeric"></option>
+            <option value="font-variant-position"></option>
+            <option value="font-weight"></option>
+            <option value="gap"></option>
+            <option value="grid"></option>
+            <option value="grid-area"></option>
+            <option value="grid-auto-columns"></option>
+            <option value="grid-auto-flow"></option>
+            <option value="grid-auto-rows"></option>
+            <option value="grid-column"></option>
+            <option value="grid-column-end"></option>
+            <option value="grid-column-gap"></option>
+            <option value="grid-column-start"></option>
+            <option value="grid-gap"></option>
+            <option value="grid-row"></option>
+            <option value="grid-row-end"></option>
+            <option value="grid-row-gap"></option>
+            <option value="grid-row-start"></option>
+            <option value="grid-template"></option>
+            <option value="grid-template-areas"></option>
+            <option value="grid-template-columns"></option>
+            <option value="grid-template-rows"></option>
+            <option value="hanging-punctuation"></option>
+            <option value="height"></option>
+            <option value="hyphens"></option>
+            <option value="image-rendering"></option>
+            <option value="@import"></option>
+            <option value="inline-size"></option>
+            <option value="inset"></option>
+            <option value="inset-block"></option>
+            <option value="inset-block-end"></option>
+            <option value="inset-block-start"></option>
+            <option value="inset-inline"></option>
+            <option value="inset-inline-end"></option>
+            <option value="inset-inline-start"></option>
+            <option value="isolation"></option>
+            <option value="justify-content"></option>
+            <option value="justify-items"></option>
+            <option value="justify-self"></option>
+            <option value="@keyframes"></option>
+            <option value="left"></option>
+            <option value="letter-spacing"></option>
+            <option value="line-break"></option>
+            <option value="line-height"></option>
+            <option value="list-style"></option>
+            <option value="list-style-image"></option>
+            <option value="list-style-position"></option>
+            <option value="list-style-type"></option>
+            <option value="margin"></option>
+            <option value="margin-block"></option>
+            <option value="margin-block-end"></option>
+            <option value="margin-block-start"></option>
+            <option value="margin-bottom"></option>
+            <option value="margin-inline"></option>
+            <option value="margin-inline-end"></option>
+            <option value="margin-inline-start"></option>
+            <option value="margin-left"></option>
+            <option value="margin-right"></option>
+            <option value="margin-top"></option>
+            <option value="mask"></option>
+            <option value="mask-clip"></option>
+            <option value="mask-composite"></option>
+            <option value="mask-image"></option>
+            <option value="mask-mode"></option>
+            <option value="mask-origin"></option>
+            <option value="mask-position"></option>
+            <option value="mask-repeat"></option>
+            <option value="mask-size"></option>
+            <option value="mask-type"></option>
+            <option value="max-height"></option>
+            <option value="max-width"></option>
+            <option value="@media"></option>
+            <option value="max-block-size"></option>
+            <option value="max-inline-size"></option>
+            <option value="min-block-size"></option>
+            <option value="min-inline-size"></option>
+            <option value="min-height"></option>
+            <option value="min-width"></option>
+            <option value="mix-blend-mode"></option>
+            <option value="object-fit"></option>
+            <option value="object-position"></option>
+            <option value="offset"></option>
+            <option value="offset-anchor"></option>
+            <option value="offset-distance"></option>
+            <option value="offset-path"></option>
+            <option value="offset-rotate"></option>
+            <option value="opacity"></option>
+            <option value="order"></option>
+            <option value="orphans"></option>
+            <option value="outline"></option>
+            <option value="outline-color"></option>
+            <option value="outline-offset"></option>
+            <option value="outline-style"></option>
+            <option value="outline-width"></option>
+            <option value="overflow"></option>
+            <option value="overflow-anchor"></option>
+            <option value="overflow-wrap"></option>
+            <option value="overflow-x"></option>
+            <option value="overflow-y"></option>
+            <option value="overscroll-behavior"></option>
+            <option value="overscroll-behavior-block"></option>
+            <option value="overscroll-behavior-inline"></option>
+            <option value="overscroll-behavior-x"></option>
+            <option value="overscroll-behavior-y"></option>
+            <option value="padding"></option>
+            <option value="padding-block"></option>
+            <option value="padding-block-end"></option>
+            <option value="padding-block-start"></option>
+            <option value="padding-bottom"></option>
+            <option value="padding-inline"></option>
+            <option value="padding-inline-end"></option>
+            <option value="padding-inline-start"></option>
+            <option value="padding-left"></option>
+            <option value="padding-right"></option>
+            <option value="padding-top"></option>
+            <option value="page-break-after"></option>
+            <option value="page-break-before"></option>
+            <option value="page-break-inside"></option>
+            <option value="paint-order"></option>
+            <option value="perspective"></option>
+            <option value="perspective-origin"></option>
+            <option value="place-content"></option>
+            <option value="place-items"></option>
+            <option value="place-self"></option>
+            <option value="pointer-events"></option>
+            <option value="position"></option>
+            <option value="quotes"></option>
+            <option value="resize"></option>
+            <option value="right"></option>
+            <option value="rotate"></option>
+            <option value="row-gap"></option>
+            <option value="scale"></option>
+            <option value="scroll-behavior"></option>
+            <option value="scroll-margin"></option>
+            <option value="scroll-margin-block"></option>
+            <option value="scroll-margin-block-end"></option>
+            <option value="scroll-margin-block-start"></option>
+            <option value="scroll-margin-bottom"></option>
+            <option value="scroll-margin-inline"></option>
+            <option value="scroll-margin-inline-end"></option>
+            <option value="scroll-margin-inline-start"></option>
+            <option value="scroll-margin-left"></option>
+            <option value="scroll-margin-right"></option>
+            <option value="scroll-margin-top"></option>
+            <option value="scroll-padding"></option>
+            <option value="scroll-padding-block"></option>
+            <option value="scroll-padding-block-end"></option>
+            <option value="scroll-padding-block-start"></option>
+            <option value="scroll-padding-bottom"></option>
+            <option value="scroll-padding-inline"></option>
+            <option value="scroll-padding-inline-end"></option>
+            <option value="scroll-padding-inline-start"></option>
+            <option value="scroll-padding-left"></option>
+            <option value="scroll-padding-right"></option>
+            <option value="scroll-padding-top"></option>
+            <option value="scroll-snap-align"></option>
+            <option value="scroll-snap-stop"></option>
+            <option value="scroll-snap-type"></option>
+            <option value="scrollbar-color"></option>
+            <option value="tab-size"></option>
+            <option value="table-layout"></option>
+            <option value="text-align"></option>
+            <option value="text-align-last"></option>
+            <option value="text-combine-upright"></option>
+            <option value="text-decoration"></option>
+            <option value="text-decoration-color"></option>
+            <option value="text-decoration-line"></option>
+            <option value="text-decoration-style"></option>
+            <option value="text-decoration-thickness"></option>
+            <option value="text-emphasis"></option>
+            <option value="text-indent"></option>
+            <option value="text-justify"></option>
+            <option value="text-orientation"></option>
+            <option value="text-overflow"></option>
+            <option value="text-shadow"></option>
+            <option value="text-transform"></option>
+            <option value="text-underline-position"></option>
+            <option value="top"></option>
+            <option value="transform"></option>
+            <option value="transform-origin"></option>
+            <option value="transform-style"></option>
+            <option value="transition"></option>
+            <option value="transition-delay"></option>
+            <option value="transition-duration"></option>
+            <option value="transition-property"></option>
+            <option value="transition-timing-function"></option>
+            <option value="translate"></option>
+            <option value="unicode-bidi"></option>
+            <option value="user-select"></option>
+            <option value="vertical-align"></option>
+            <option value="visibility"></option>
+            <option value="white-space"></option>
+            <option value="widows"></option>
+            <option value="width"></option>
+            <option value="word-break"></option>
+            <option value="word-spacing"></option>
+            <option value="word-wrap"></option>
+            <option value="writing-mode"></option>
+            <option value="z-index"></option>
+        </datalist>
+
+        <datalist id="oh">
+            <option value="static"></option>
+            <option value="relative"></option>
+            <option value="absolute"></option>
+            <option value="fixed"></option>
+            <option value="sticky"></option>
+        </datalist>
+
+        <datalist id="of">
+        </datalist>
+        <!-- END DATALIST TAGS WITH PREDEFINED VALUES -->
+
+
+
+        <!-- MODAL -->
+        <div class="iy" data-cp="dg">
+            <div class="iz ha">
+                <header class="kj">
+                    <h2 data-cm="properties"></h2>
+                </header>
+
+                <div class="kk">
+                    <div class="hd">
+                        <input type="text" required>
+                        <label data-cm="title"></label>
+                    </div>
+
+                    <div class="hd">
+                        <textarea required></textarea>
+                        <label data-cm="description"></label>
+                    </div>
+                </div>
+
+                <div class="kw">
+                    <ul>
+                        <li><button class="jc" data-cm="continue"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="iy" data-cp="dh">
+            <div class="iz">
+                <header class="kj">
+                    <h2 data-cm="emojis"></h2>
+                </header>
+
+                <div class="kk">
+                </div>
+
+                <div class="kw">
+                    <ul>
+                        <li class="ja">
+                            <div class="ix">
+                                <button><span data-cm="categories"></span>&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                                <ul></ul>
+                            </div>
+                        </li>
+
+                        <li><button class="jb" data-cm="cancel"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="iy" data-cp="di">
+            <div class="iz">
+                <header class="kj">
+                    <h2 data-cm="special_characters"></h2>
+                </header>
+
+                <div class="kk">
+                </div>
+
+                <div class="kw">
+                    <ul>
+                        <li class="ja">
+                            <div class="ix">
+                                <button><span data-cm="categories"></span>&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                                <ul></ul>
+                            </div>
+                        </li>
+
+                        <li><button class="jb" data-cm="cancel"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="iy" data-cp="dj">
+            <div class="iz">
+                <header class="kj">
+                    <h2 data-cm="file_info"></h2>
+                </header>
+
+                <div class="kk">
+                </div>
+
+                <div class="kw">
+                    <ul>
+                        <li><button class="jb" data-cm="close"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="iy" data-cp="dk">
+            <div class="iz">
+                <header class="kj">
+                    <h2 data-cm="table"></h2>
+                </header>
+
+                <div class="kk">
+                    <div class="hd">
+                        <input type="text" required>
+                        <label data-cm="columns"></label>
+                    </div>
+                </div>
+
+                <div class="kw">
+                    <ul>
+                        <li><button class="jb" data-cm="cancel"></button></li>
+                        <li><button class="jc" data-cm="insert"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="iy" data-cp="dl">
+            <div class="iz">
+                <header class="kj">
+                    <h2 data-cm="media_embed"></h2>
+                </header>
+
+                <div class="kk">
+                    <div class="hd">
+                        <input type="text" required>
+                        <label data-cm="link"></label>
+                    </div>
+                </div>
+
+                <div class="kw">
+                    <ul>
+                        <li class="ja"><button class="hb" data-cm="html_embed"></button></li>
+                        <li><button class="jb" data-cm="cancel"></button></li>
+                        <li><button class="jc" data-cm="insert"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="iy" data-cp="dm">
+            <div class="iz">
+                <header class="kj">
+                    <h2 data-cm="link"></h2>
+                </header>
+
+                <div class="kk">
+                    <div class="hd">
+                        <input type="text" required>
+                        <label data-cm="link"></label>
+                    </div>
+
+                    <div class="hd">
+                        <input type="text" required>
+                        <label data-cm="title"></label>
+                    </div>
+
+                    <button class="jd" data-cm="new_tab"> <span data-cs="0"></span></button>
+                </div>
+
+                <div class="kw">
+                    <ul>
+                        <li><button class="jb" data-cm="cancel"></button></li>
+                        <li><button class="jc" data-cm="insert"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="iy" data-cp="dn">
+            <div class="iz ha">
+                <header class="kj">
+                    <h2 data-cm="images"></h2>
+                </header>
+
+                <div class="kk">
+                    <div class="jg">
+                        <div class="hd">
+                            <input type="text" required>
+                            <label data-cm="link"></label>
+                        </div>
+                        <button class="jk" data-cn="add_image"><i class="fas fa-plus"></i></button>
+
+                        <input class="jl" type="file" accept="image/*" multiple>
+                        <button class="hb" data-cn="upload_image"><i class="fas fa-upload"></i></button>
+                    </div>
+                    <div class="jg">
+                        <div class="jh"></div>
+                    </div>
+                </div>
+
+                <div class="kw">
+                    <ul>
+                        <li><button class="jb" data-cm="cancel"></button></li>
+                        <li><button class="jc" data-cm="insert"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="iy" data-cp="gc">
+            <div class="iz">
+                <header class="kj">
+                    <h2 data-cm="edit_disabled"></h2>
+                </header>
+
+                <div class="kk">
+                    <p data-cm="file_edited_by"><span></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="iy" data-cp="gb">
+            <div class="iz gz">
+                <header class="kj">
+                    <h2 data-cm="key_shortcuts"></h2>
+                </header>
+
+                <div class="kk adiptal-ui">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Windows / Linux</th>
+                                <th>Mac</th>
+                                <th>Action</th>
+                                <th>Available</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+ <code>s</code></td>
+                                <td><code>cmd</code>&nbsp;+ <code>s</code></td>
+                                <td>Save</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>S</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>S</code></td>
+                                <td>Autosave&nbsp;( Toggle on/off )</td>
+                                <td><i class="far fa-gem"></i>&nbsp;<strong>Pro</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>f</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>f</code></td>
+                                <td>Find and Replace</td>
+                                <td><i class="far fa-gem"></i>&nbsp;<strong>Pro</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>p</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>p</code></td>
+                                <td>Print</td>
+                                <td><i class="far fa-gem"></i>&nbsp;<strong>Pro</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>alt</code>&nbsp;+&nbsp;<code>v</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>alt</code>&nbsp;+ <code>v</code></td>
+                                <td>Paste Pro (Paste as HTML from Websites, Google Docs & Google Sheets)</td>
+                                <td><i class="far fa-gem"></i>&nbsp;<strong>Pro</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>I</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+ <code>I</code></td>
+                                <td>Import</td>
+                                <td><i class="far fa-gem"></i>&nbsp;<strong>Pro</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>E</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>E</code></td>
+                                <td>Export</td>
+                                <td><i class="far fa-gem"></i>&nbsp;<strong>Pro</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>F</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>F</code></td>
+                                <td>Fullscreen ( Toggle on/off )</td>
+                                <td><i class="far fa-gem"></i>&nbsp;<strong>Pro</strong></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><strong>Popup / Modal</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>Esc</code></td>
+                                <td><code>Esc</code></td>
+                                <td>Cancel</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>Enter</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>Enter</code></td>
+                                <td>Submit</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><strong>Insert Element</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>H</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>H</code></td>
+                                <td>Heading</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>P</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+ <code>P</code></td>
+                                <td>Paragraph</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>B</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>B</code></td>
+                                <td>Blockquote</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>alt</code>&nbsp;+&nbsp;<code>h</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>alt</code>&nbsp;+&nbsp;<code>h</code></td>
+                                <td>Html&nbsp;Embed</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+ <code>alt</code>&nbsp;+&nbsp;<code>p</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>alt</code>&nbsp;+ <code>p</code></td>
+                                <td>Preformatted</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>U</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>U</code></td>
+                                <td>Unorder List</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>O</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>O</code></td>
+                                <td>Order List</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>C</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>C</code></td>
+                                <td>Check List</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>+&nbsp;<code>alt</code>&nbsp;+&nbsp;<code>P</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>+&nbsp;<code>alt</code>&nbsp;+&nbsp;<code>P</code></td>
+                                <td>Page Break</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><strong>Text Style </strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>shift</code>&nbsp;+&nbsp;<code>Enter</code></td>
+                                <td><code>shift</code>&nbsp;+&nbsp;<code>Enter</code></td>
+                                <td>Enter/New Line</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>b</code></td>
+                                <td><code>cmd</code>&nbsp;+ <code>b</code></td>
+                                <td>Bold</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>i</code></td>
+                                <td><code>cmd</code>&nbsp;+ <code>i</code></td>
+                                <td>Italic</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>u</code></td>
+                                <td><code>cmd</code>&nbsp;+ <code>u</code></td>
+                                <td>Underline</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>d</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>d</code></td>
+                                <td>Strikethrough</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>Arrow Up</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>Arrow Up</code></td>
+                                <td>Superscript</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>Arrow Down</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>Arrow Down</code></td>
+                                <td>Subscript</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>h</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>h</code></td>
+                                <td>Inline Code</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>l</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>l</code></td>
+                                <td>Align Left</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>e</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>e</code></td>
+                                <td>Align Center</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>r</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>r</code></td>
+                                <td>Align Right</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>j</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>j</code></td>
+                                <td>Align Justify</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>R</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+&nbsp;<code>R</code></td>
+                                <td>Paragraph Direction ( RTL / LTR )</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+ <code>L</code></td>
+                                <td><code>cmd</code>&nbsp;+ <code>shift</code>&nbsp;+ <code>L</code></td>
+                                <td>Create/Edit&nbsp;Inline Link</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><code>ctrl</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+ <code>alt</code> +&nbsp;<code>R</code></td>
+                                <td><code>cmd</code>&nbsp;+&nbsp;<code>shift</code>&nbsp;+ <code>alt</code> +&nbsp;<code>R</code></td>
+                                <td>Remove Format</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+
+                <div class="kw">
+                    <ul>
+                        <li><button class="jb" data-cm="close"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL -->
+    </div>
+
+    <!-- MULTI LINGUAL -->
+    <script src="assets/langs/english.js"></script>
+
+    <!-- FUNCTIONALITY  -->
+    <script src="ui/assets/js/default.min.js"></script>
+    <script src="assets/js/functionality.min.js"></script>
+
+    <!-- PRO  -->
+    <script src="https://web.adiptal.com/plugin/studio/assets/js/pro.min.js"></script>
+</body>
+</html>
