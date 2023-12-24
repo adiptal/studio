@@ -114,7 +114,7 @@ ol{
 .adiptal-ui th,
 .adiptal-ui pre>code,
 .adiptal-ui blockquote,
-.adiptal-ui .il:not([data-cr="eb"]){
+.adiptal-ui .im:not([data-cr="ea"]){
     color: rgba( var( --primary-rgba ), .85);
 }
 
@@ -150,11 +150,10 @@ ol{
 }
 
 .adiptal-ui section>*,
-.adiptal-ui section .columns>div>*,
+.adiptal-ui section .container>div>*,
 .adiptal-ui section .carousel>*:not(.navigation)>*,
 .adiptal-ui section .accordion>div>*>*,
-.adiptal-ui section .tab>div>*>*,
-.adiptal-ui section .container>*{
+.adiptal-ui section .tab>div>*>*{
     position: relative;
     margin: 1.5rem;
     z-index: 1;
@@ -168,11 +167,10 @@ ol{
 
 
 
-.adiptal-ui section .columns>div,
+.adiptal-ui section .container>div,
 .adiptal-ui section .carousel>*:not(.navigation),
 .adiptal-ui section .accordion>*>button.active+*,
-.adiptal-ui section .tab>.tab-body>*,
-.adiptal-ui section .container{
+.adiptal-ui section .tab>.tab-body>*{
     position: relative;
     overflow: auto;
 }
@@ -278,7 +276,7 @@ ol{
 
 /* --------------------- dm --------------------- */
 .adiptal-ui section>a,
-.adiptal-ui section div:not(.il)>a{
+.adiptal-ui section div:not(.im)>a{
     display: block;
     text-decoration: none;
     color: rgba( var( --primary-rgba ), .85);
@@ -309,20 +307,6 @@ ol{
 }
 
 
-/* --------------------- BLOCKQUOTE --------------------- */
-.adiptal-ui figure.blockquote{
-    position: relative;
-}
-
-.adiptal-ui figure blockquote{
-    padding: 1rem;
-}
-
-.adiptal-ui figure.blockquote figcaption{
-    padding: .35rem 1rem;
-}
-
-
 /* --------------------- CAPTION --------------------- */
 .adiptal-ui figure figcaption{
     font-style: italic;
@@ -342,20 +326,18 @@ ol{
 }
 
 .adiptal-ui section>ul:not(.checklist),
-.adiptal-ui section .columns>div>ul:not(.checklist),
+.adiptal-ui section .container>div>ul:not(.checklist),
 .adiptal-ui section .carousel>*>ul:not(.checklist),
 .adiptal-ui section .accordion>div>*>ul:not(.checklist),
-.adiptal-ui section .tab>div>*>ul:not(.checklist),
-.adiptal-ui section .container>ul:not(.checklist){
+.adiptal-ui section .tab>div>*>ul:not(.checklist){
     list-style-type: disc;
 }
 
 .adiptal-ui section>ol,
-.adiptal-ui section .columns>div>ol,
+.adiptal-ui section .container>div>ol,
 .adiptal-ui section .carousel>*>ol,
 .adiptal-ui section .accordion>div>*>ol,
-.adiptal-ui section .tab>div>*>ol,
-.adiptal-ui section .container>ol{
+.adiptal-ui section .tab>div>*>ol{
     list-style-type: decimal;
 }
 
@@ -376,12 +358,12 @@ ol{
 }
 
 .adiptal-ui ul.checklist li::before,
-.hg ul.checklist button{
+.hh ul.checklist button{
     position: absolute;
     left: -1.5rem;
 }
 
-.hg ul.checklist button{
+.hh ul.checklist button{
     top: .35rem;
     padding: .45rem;
     z-index: 1;
@@ -390,7 +372,7 @@ ol{
 
 /* --------------------- dk --------------------- */
 .adiptal-ui .table>div,
-.adiptal-ui .im{
+.adiptal-ui .io{
     table-layout: fixed;
     overflow-x: auto;
 }
@@ -440,24 +422,17 @@ ol{
 
 
 /* --------------------- dp --------------------- */
-.adiptal-ui .columns{
+.adiptal-ui .container{
     display: flex;
     flex-wrap: wrap;
 }
 
-.adiptal-ui .columns>*{
-    flex: 0 0 50%;
-}
-
-@container adiptal-ui (width < 768px)
-{
-    .adiptal-ui .columns>*{
-        flex: 0 0 100%;
-    }
+.adiptal-ui .container>*{
+    flex: auto;
 }
 
 
-/* ------------------------- dt ------------------------- */
+/* ------------------------- ds ------------------------- */
 .adiptal-ui .carousel{
     box-shadow: 0 0 0 .05rem rgba( var( --primary-rgba ), .2);
 }
@@ -599,7 +574,7 @@ ol{
 }
 
 .adiptal-ui ul.checklist li[data-dir]::before,
-.hg ul.checklist [data-dir] button{
+.hh ul.checklist [data-dir] button{
     left: unset;
     right: -1.5rem;
 }
