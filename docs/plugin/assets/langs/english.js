@@ -250,6 +250,7 @@ lang_pack.json = {
     'condition' : 'Condition',
     'value' : 'Value',
     'portrait' : 'Portrait',
+    'advance_classes' : 'Advance Classes',
     // '' : '',
 };
 
@@ -269,20 +270,20 @@ lang_pack.change = function(){
         });
     }
 
-    ne( '[data-cn]' ).forEach(function(i){
-        i.mt({
-            'aria-label' : lang_pack.json[ i.mt( 'data-cn' ) ]
+    nf( '[data-cn]' ).forEach(function(i){
+        i.mu({
+            'aria-label' : lang_pack.json[ i.mu( 'data-cn' ) ]
         });
     });
 
-    ne( '[data-cm]' ).forEach(function(i){
+    nf( '[data-cm]' ).forEach(function(i){
         var nodes = i.childNodes;
         if( nodes.length != 0 )
         {
             nodes[0].remove();
         }
 
-        i.na( lang_pack.json[ i.mt( 'data-cm' ) ] );
+        i.nb( lang_pack.json[ i.mu( 'data-cm' ) ] );
     });
 };
 
