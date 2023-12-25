@@ -1,6 +1,6 @@
 {
   "name": "@adiptal/studio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adiptal Studio is an iframe based self-host headless page builder to integrate in any cms/framework. It's feature-rich design and gives clean output to design responsive pages.",
   "main": "index.html",
   "repository": {
