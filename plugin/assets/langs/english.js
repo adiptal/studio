@@ -255,11 +255,11 @@ lang_pack.json = {
 };
 
 lang_pack.label = function( key ){
-    return 'data-cn="'+ key +'" aria-label="'+ lang_pack.json[ key ] +'"';
+    return 'data-co="'+ key +'" aria-label="'+ lang_pack.json[ key ] +'"';
 }
 
 lang_pack.text = function( key ){
-    return 'data-cm="'+ key +'">'+ lang_pack.json[ key ];
+    return 'data-cn="'+ key +'">'+ lang_pack.json[ key ];
 }
 
 lang_pack.change = function(){
@@ -270,20 +270,20 @@ lang_pack.change = function(){
         });
     }
 
-    nf( '[data-cn]' ).forEach(function(i){
-        i.mu({
-            'aria-label' : lang_pack.json[ i.mu( 'data-cn' ) ]
+    nh( '[data-co]' ).forEach(function(i){
+        i.mw({
+            'aria-label' : lang_pack.json[ i.mw( 'data-co' ) ]
         });
     });
 
-    nf( '[data-cm]' ).forEach(function(i){
+    nh( '[data-cn]' ).forEach(function(i){
         var nodes = i.childNodes;
         if( nodes.length != 0 )
         {
             nodes[0].remove();
         }
 
-        i.nb( lang_pack.json[ i.mu( 'data-cm' ) ] );
+        i.nd( lang_pack.json[ i.mw( 'data-cn' ) ] );
     });
 };
 
