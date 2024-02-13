@@ -39,8 +39,8 @@
     box-sizing: border-box;
 }
 
-.hg,
-.hh{
+.hh,
+.hi{
     width: 100vw;
     height: 100vh;
 }
@@ -141,7 +141,7 @@ i{
 }
 
 
-a .im{
+a .io{
     pointer-events: all;
 }
 
@@ -155,7 +155,7 @@ a .im{
 
 input,
 textarea,
-.im{
+.io{
     user-select: text;
 }
 
@@ -164,20 +164,20 @@ strong{
 }
 
 
-.hh .kx [data-cq="er"],
-.hh .hn .la [data-cq="er"] label{
+.hi .kz [data-cr="es"],
+.hi .ho .lc [data-cr="es"] label{
     position: relative;
     height: 100%;
     aspect-ratio: 1/1;
     box-shadow: inset 0 0 0 .1rem var( --red );
 }
 
-.hh .hn .la [data-cq="er"] label{
+.hi .ho .lc [data-cr="es"] label{
     border-radius: 1rem;
 }
 
-.hh .kx [data-cq="er"]::after,
-.hh .hn .la [data-cq="er"] label::after{
+.hi .kz [data-cr="es"]::after,
+.hi .ho .lc [data-cr="es"] label::after{
     content: '';
     position: absolute;
     top: 0;
@@ -192,11 +192,11 @@ strong{
     background: var( --red );
 }
 
-.hh [data-cq="er"].disabled label{
+.hi [data-cr="es"].disabled label{
     box-shadow: inset 0 0 0 .1rem rgba( var( --primary-rgba ), .4) !important;
 }
 
-.hh [data-cq="er"].disabled label::after{
+.hi [data-cr="es"].disabled label::after{
     background: rgba( var( --primary-rgba ), .4) !important;
 }
 /* ------------------------- END DEFAULT ------------------------- */
@@ -243,21 +243,21 @@ button:not(.disabled):hover::before{
 
 button:not(.disabled):active::before,
 button:not(.disabled).active::before,
-button:not(.disabled).kg::before{
+button:not(.disabled).ki::before{
     background: rgba( var( --primary-rgba ), .1);
 }
 
-.accordion>.jt>button.active::before,
-.tab .tab-heading li.active button::before{
+.d-accordion>.jv>button.active::before,
+.d-tab .d-tab-heading li.active button::before{
     background: none;
 }
 
-.accordion>.jt>button.active,
-.tab li.active{
+.d-accordion>.jv>button.active,
+.d-tab li.active{
     border-radius: 0;
 }
 
-button span[data-cs]{
+button span[data-ct]{
     position: relative;
     display: inline-block;
     margin-left: 1.5rem;
@@ -266,7 +266,7 @@ button span[data-cs]{
     border-radius: .35rem;
 }
 
-button span[data-cs]::before{
+button span[data-ct]::before{
     content: '';
     position: absolute;
     top: -.1rem;
@@ -277,7 +277,7 @@ button span[data-cs]::before{
     background: var( --grey-3 );
 }
 
-button span[data-cs="1"]::before{
+button span[data-ct="1"]::before{
     left: unset;
     right: -.1rem;
     background: var( --primary );
@@ -297,16 +297,16 @@ button span[data-cs="1"]::before{
 
 
 /* ------------------------- ADIPTAL UI ------------------------- */
-.hh .adiptal-ui{
+.hi .adiptal-ui{
     position: relative;
     min-height: 100%;
 }
 
-.hh .adiptal-ui>section{
+.hi .adiptal-ui>section{
     box-shadow: none !important;
 }
 
-.hh .adiptal-ui>section:only-child{
+.hi .adiptal-ui>section:only-child{
     flex: 1 0 100%;
 }
 /* ------------------------- END ADIPTAL UI ------------------------- */
@@ -314,38 +314,38 @@ button span[data-cs="1"]::before{
 
 
 /* ------------------------- FORM INPUT ------------------------- */
-.he{
+.hf{
     position: relative;
     margin: 1rem auto;
     box-shadow: inset 0 0 0 .075rem rgba( var( --primary-rgba ), .2);
 }
 
-.he:first-of-type{
+.hf:first-of-type{
     margin-top: 0;
 }
 
-.he:last-of-type{
+.hf:last-of-type{
     margin-bottom: 0;
 }
 
-.he:focus-within{
+.hf:focus-within{
     box-shadow: inset 0 0 0 .075rem var( --blue );
 }
 
-.he input:not([type="range"]):not([type="color"]),
-.he textarea{
+.hf input:not([type="range"]):not([type="color"]),
+.hf textarea{
     display: block;
     width: 100%;
     box-shadow: none;
     padding: 1.5rem .5rem .5rem;
 }
 
-.he textarea{
+.hf textarea{
     min-height: 6rem;
 }
 
-.he input ~ label,
-.he textarea ~ label{
+.hf input ~ label,
+.hf textarea ~ label{
     position: absolute;
     top: .25rem;
     left: .5rem;
@@ -355,8 +355,8 @@ button span[data-cs="1"]::before{
     pointer-events: none;
 }
 
-.he input:focus ~ label,
-.he textarea:focus ~ label{
+.hf input:focus ~ label,
+.hf textarea:focus ~ label{
     color: var( --blue );
 }
 /* ------------------------- END FORM INPUT ------------------------- */
@@ -364,7 +364,7 @@ button span[data-cs="1"]::before{
 
 
 /* ------------------------- TOOLTIP ------------------------- */
-.lo{
+.lq{
     position: fixed;
     display: inline-block;
     padding: .25rem .5rem;
@@ -375,7 +375,7 @@ button span[data-cs="1"]::before{
     z-index: 9999;
 }
 
-.st-dark-mode .lo{
+.st-dark-mode .lq{
     background: var( --primary );
 }
 /* ------------------------- END TOOLTIP ------------------------- */
@@ -383,7 +383,7 @@ button span[data-cs="1"]::before{
 
 
 /* -------------------------  CREATE RECTANGLE  ------------------------- */
-.kd{
+.kf{
     position: absolute;
     display: none;
     pointer-events: none;
@@ -395,35 +395,35 @@ button span[data-cs="1"]::before{
 
 
 /* -------------------------  EDITOR  ------------------------- */
-.hh{
+.hi{
     display: flex;
     background: var( --secondary );
 }
 
-.hh i{
+.hi i{
     font-size: .85rem;
 }
 
-.hh .hm,
-.hh .kx,
-.hh .hs,
-.hh .hz,
-.hh .ib,
-.hh .adiptal-ui{
+.hi .hn,
+.hi .kz,
+.hi .ht,
+.hi .ia,
+.hi .ic,
+.hi .adiptal-ui{
     border-radius: 0;
 }
 
 
 
 /* EDITOR CONTAINERS */
-.hh .ho{
+.hi .hp{
     display: flex;
     flex-direction: column;
     flex: auto;
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.hh .ho .kx>div{
+.hi .hp .kz>div{
     display: flex;
     gap: .5rem;
 }
@@ -431,7 +431,7 @@ button span[data-cs="1"]::before{
 
 
 /* SIDEBAR */
-.hh .hm{
+.hi .hn{
     display: none;
     flex: 0 0 15rem;
     width: 100%;
@@ -441,7 +441,7 @@ button span[data-cs="1"]::before{
     z-index: 4;
 }
 
-.hh .hm.hl{
+.hi .hn.hm{
     flex: 0 0 20rem;
     border-right: none;
     border-left: solid .2rem rgba( var( --primary-rgba ), .15);
@@ -449,24 +449,24 @@ button span[data-cs="1"]::before{
 
 @media(width < 992px)
 {
-    .hh .hm{
+    .hi .hn{
         position: absolute;
     }
 
-    .hh .hm.hl{
+    .hi .hn.hm{
         right: 0;
     }
 }
 
 @media(width < 550px)
 {
-    .hh .hm,
-    .hh .hm.hl{
+    .hi .hn,
+    .hi .hn.hm{
         max-width: unset;
     }
 }
 
-.hh .hm .hn{
+.hi .hn .ho{
     display: none;
     flex-direction: column;
     height: 100%;
@@ -475,54 +475,54 @@ button span[data-cs="1"]::before{
 
 
 
-.hh .hn header{
+.hi .ho header{
     padding: .5rem 1rem;
     gap: .5rem;
 }
 
-.hh .hn header,
-.hh .hn header>.iy>button,
-.hh .hn .la button{
+.hi .ho header,
+.hi .ho header>.ja>button,
+.hi .ho .lc button{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.hh .hn header h2{
+.hi .ho header h2{
     font-size: 1rem;
     font-weight: var( --weight-strong-1 );
     text-transform: uppercase;
 }
 
-.hh .hn header>.iy{
+.hi .ho header>.ja{
     flex: auto;
 }
 
 
 
-.hh .hn header>button,
-.hh .hn .iy>button,
-.hh .hn .la>button,
-.hh .hn .la .hi>button{
+.hi .ho header>button,
+.hi .ho .ja>button,
+.hi .ho .lc>button,
+.hi .ho .lc .hj>button{
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.hh .hn .la .hi>button,
-.hh .hn .la .hi>label,
-.hh .hn .la .iy>button{
+.hi .ho .lc .hj>button,
+.hi .ho .lc .hj>label,
+.hi .ho .lc .ja>button{
     padding: .4rem .6rem;
     font-size: .85rem;
     text-transform: uppercase;
     font-weight: var( --weight-strong-1 );
 }
 
-.hh .hn .la .iy>button>i{
+.hi .ho .lc .ja>button>i{
     padding-top: .25rem;
 }
 
 
 
-.hh .hn .la{
+.hi .ho .lc{
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -530,55 +530,55 @@ button span[data-cs="1"]::before{
     overflow: auto;
 }
 
-.hh .hn .la section{
+.hi .ho .lc section{
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.hh .hn .la .hi:empty,
-.hh .hn .la .hi:has(>.ky:empty),
-.hh .hn .la .ky:empty{
+.hi .ho .lc .hj:empty,
+.hi .ho .lc .hj:has(>.la:empty),
+.hi .ho .lc .la:empty{
     display: none !important;
 }
 
-.hh .hn .la .hi{
+.hi .ho .lc .hj{
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
 
-.hh .hn .la>button{
+.hi .ho .lc>button{
     width: 100%;
 }
 
-.hh .hn .la .ky{
+.hi .ho .lc .la{
     align-items: center;
     gap: .5rem;
     padding: .25rem .5rem;
 }
 
-.hh .hn .he{
+.hi .ho .hf{
     margin: 0;
 }
 
-.hh .hn .hi .ky:not(label){
+.hi .ho .hj .la:not(label){
     padding: 0;
     background: none;
 }
 
 
-.hh .hn[data-cp="de"] .hi .ky,
-.hh .hn[data-cp="dd"] .hi label.ky{
+.hi .ho[data-cq="df"] .hj .la,
+.hi .ho[data-cq="de"] .hj label.la{
     justify-content: space-between;
 }
 
 
-.hh .hn[data-cp="dd"] .hi .hp[data-cq="er"]:not(.active){
+.hi .ho[data-cq="de"] .hj .hq[data-cr="es"]:not(.active){
     cursor: not-allowed;
 }
 
-.hh .hn[data-cp="dd"] .hi .ky:not(label)>*{
+.hi .ho[data-cq="de"] .hj .la:not(label)>*{
     flex: 0 0 calc( 25% - .375rem );
     display: block;
     padding: .4rem;
@@ -586,21 +586,21 @@ button span[data-cs="1"]::before{
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.hh .hn[data-cp="dd"] .hi .ky>.iy{
+.hi .ho[data-cq="de"] .hj .la>.ja{
     padding: 0;
 }
 
-.hh .hn[data-cp="dd"] .hi .ky>.iy>button{
+.hi .ho[data-cq="de"] .hj .la>.ja>button{
     padding: .4rem;
     justify-content: center;
     background: none;
 }
 
-.hh .hn[data-cp="dd"] .hi .lf li{
+.hi .ho[data-cq="de"] .hj .lh li{
     display: inline-block;
 }
 
-.hh .hn[data-cp="dd"] .hi .lf button{
+.hi .ho[data-cq="de"] .hj .lh button{
     display: inline-block;
     text-align: center;
 }
@@ -608,15 +608,15 @@ button span[data-cs="1"]::before{
 
 
 /* TOOLBAR */
-.hh .kx,
-.hh .kp,
-.hh footer{
+.hi .kz,
+.hi .kr,
+.hi footer{
     flex-wrap: wrap;
     gap: .5rem;
     padding: .5rem;
 }
 
-.hh .kx{
+.hi .kz{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -624,25 +624,25 @@ button span[data-cs="1"]::before{
 }
 
 
-.ky{
+.la{
     display: flex;
     flex-wrap: wrap;
 }
 
-.ky:empty{
+.la:empty{
     display: none;
 }
 
-.hh .ky{
+.hi .la{
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.iz .ky{
+.jb .la{
     gap: .5rem;
     justify-content: space-between;
 }
 
-.iz .ky>.he{
+.jb .la>.hf{
     flex: 0 0 calc( 33.33% - .5rem );
     margin: 0;
 }
@@ -650,28 +650,28 @@ button span[data-cs="1"]::before{
 
 
 /* FILE OPTIONS */
-.hh .ke{
+.hi .kg{
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
 
-.hh .ke li{
+.hi .kg li{
     margin: 0;
 }
 
-.hh .ke label{
+.hi .kg label{
     display: block;
     padding: .25rem .5rem;
     font-weight: var( --weight-normal );
     background: rgba( var( --primary-rgba ), .05);
 }
-.hh .ke button{
+.hi .kg button{
     width: 100%;
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.hh .ke div{
+.hi .kg div{
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -680,18 +680,18 @@ button span[data-cs="1"]::before{
     box-shadow: inset 0 0 0 .1rem rgba( var( --primary-rgba ), .05);
 }
 
-.hh .ke input{
+.hi .kg input{
     position: relative;
     padding: .25rem .5rem;
     background: var( --secondary );
     border: solid .075rem rgba( var( --primary-rgba ), .1);
 }
 
-.hh .ke input:focus{
+.hi .kg input:focus{
     border: solid .075rem var( --blue );
 }
 
-.hh .ke input:not(:disabled):not(:valid):not(:focus)::before{
+.hi .kg input:not(:disabled):not(:valid):not(:focus)::before{
     content: '';
     position: absolute;
     top: 0;
@@ -704,23 +704,23 @@ button span[data-cs="1"]::before{
     pointer-events: none;
 }
 
-.hh .ke input:not(:disabled):not(:valid):not(:focus)::before{
+.hi .kg input:not(:disabled):not(:valid):not(:focus)::before{
     content: attr( aria-label );
 }
 
 
 
 /* SCROLLABLE */
-.hh .hs{
+.hi .ht{
     flex: auto;
 }
 
-.hh .hs,
-.hh .hz{
+.hi .ht,
+.hi .ia{
     overflow: hidden;
 }
 
-.hh .hz{
+.hi .ia{
     width: auto;
     height: 100%;
     max-width: 100%;
@@ -729,7 +729,7 @@ button span[data-cs="1"]::before{
 
 
 
-.hh .ib{
+.hi .ic{
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -739,11 +739,11 @@ button span[data-cs="1"]::before{
 
 
 /* NESTED ELEMENTS */
-.hh .hz>.ib>.adiptal-ui>section::before,
-.hh .ib .il[data-cr="dr"]>.tab-body>section::before,
-.hh .ib .il[data-cr="dq"]>.jt>section::before,
-.hh .ib .il[data-cr="dp"]>section::before,
-.hh .ib .il[data-cr="ds"]>section::before{
+.hi .ia>.ic>.adiptal-ui>section::before,
+.hi .ic .im[data-cs="ds"]>.d-tab-body>section::before,
+.hi .ic .im[data-cs="dr"]>.jv>section::before,
+.hi .ic .im[data-cs="dq"]>section::before,
+.hi .ic .im[data-cs="dt"]>section::before{
     content: '';
     position: absolute;
     top: 0;
@@ -754,32 +754,32 @@ button span[data-cs="1"]::before{
     pointer-events: none;
 }
 
-.hh .hz>.ib>.adiptal-ui>section.active::before,
-.hh .ib .il[data-cr="dr"]>.tab-body>section.active::before,
-.hh .ib .il[data-cr="dq"]>.jt>section.active::before,
-.hh .ib .il[data-cr="dp"]>section.active::before,
-.hh .ib .il[data-cr="ds"]>section.active::before{
+.hi .ia>.ic>.adiptal-ui>section.active::before,
+.hi .ic .im[data-cs="ds"]>.d-tab-body>section.active::before,
+.hi .ic .im[data-cs="dr"]>.jv>section.active::before,
+.hi .ic .im[data-cs="dq"]>section.active::before,
+.hi .ic .im[data-cs="dt"]>section.active::before{
     border-color: var( --blue );
 }
 
 
 
-.hh .ib button>.im{
+.hi .ic button>.io{
     margin: 0;
     pointer-events: all;
 }
 
-.hh .ib section .jt{
+.hi .ic section .jv{
     position: relative;
 }
 
-.hh .ib section section{
+.hi .ic section section{
     min-height: 5rem;
     margin: 0;
     overflow: auto;
 }
 
-.hh .ib section .jt>.gx{
+.hi .ic section .jv>.gy{
     position: absolute;
     top: 0;
     right: 0;
@@ -792,51 +792,51 @@ button span[data-cs="1"]::before{
     display: none;
 }
 
-.hh .ib section .jt:hover>.gx{
+.hi .ic section .jv:hover>.gy{
     display: unset;
 }
 
-.hh .ib section .jt>.gx i{
+.hi .ic section .jv>.gy i{
     margin: 0;
     color: rgba( var( --primary-rgba ), .6);
 }
 
-.hh .ib section .jt>.im{
+.hi .ic section .jv>.io{
     width: calc( 100% - 3rem );
     margin: 1.5rem;
 }
 
-.hh .ib section .tab-heading button>.im{
+.hi .ic section .d-tab-heading button>.io{
     min-width: 5rem;
 }
 
 
 
 /* HOLDER */
-.hh .il{
+.hi .im{
     z-index: 1;
 }
 
-.hh .il:empty{
+.hi .im:empty:not(:focus){
     display: none;
 }
 
-.hh .il[data-cr="ef"]:not(.checklist){
+.hi .im[data-cs="eg"]:not(.d-checklist){
     list-style: disc;
 }
 
-.hh .il[data-cr="ee"]{
+.hi .im[data-cs="ef"]{
     list-style: decimal;
 }
 
-.hh .il[data-cr="ei"]{
+.hi .im[data-cs="ej"]{
     position: absolute;
     width: 100%;
     bottom: 0;
     margin: 0;
 }
 
-.hh .il[data-cr="ei"]>*{
+.hi .im[data-cs="ej"]>*{
     position: absolute;
     top: -1rem;
     left: 0;
@@ -845,45 +845,45 @@ button span[data-cs="1"]::before{
     z-index: 1;
 }
 
-.hh .il[data-cr="ei"]>*>.hr{
+.hi .im[data-cs="ej"]>*>.hr{
     background: rgba( var( --primary-rgba ), .1) !important;
 }
 
 
 
 /* FOOTER */
-.hh footer{
+.hi footer{
     display: flex;
 }
 
-.hh footer .ky>a,
-.hh footer .ky>button,
-.hh footer .ky>.iy>button{
+.hi footer .la>a,
+.hi footer .la>button,
+.hi footer .la>.ja>button{
     font-size: .85rem;
 }
 
-.hh footer a{
+.hi footer a{
     padding: .25rem .5rem;
     background: rgba( var( --blue-rgba ), .2);
 }
 
-.hh footer a>i{
+.hi footer a>i{
     color: var( --blue );
 }
 
-.hh footer .jx{
+.hi footer .jz{
     background: var( --blue ) !important;
     color: var( --secondary );
 }
 
-.hh footer .jx>i{
+.hi footer .jz>i{
     color: var( --secondary );
 }
 
 
 
 /* COMMON MENUS BUTTON */
-.hh .il>button{
+.hi .im>button{
     position: absolute;
     right: 0;
     top: -1.75rem;
@@ -892,16 +892,16 @@ button span[data-cs="1"]::before{
     box-shadow: 0 0 0 .075rem rgba( var( --primary-rgba ), .1);
 }
 
-.hh .il>button,
-.hh .il>button i{
+.hi .im>button,
+.hi .im>button i{
     line-height: normal;
 }
 
 
 
 /* TITLE */
-.hh .il .im ~ label,
-.hh .il .im::before{
+.hi .io ~ label,
+.hi .io::before{
     content: attr( aria-label );
     position: absolute;
     top: 0;
@@ -913,13 +913,13 @@ button span[data-cs="1"]::before{
     color: rgba( var( --primary-rgba ), .6);
 }
 
-.hh .il .im:not(:focus):not(:empty) ~ label,
-.hh .il .im:not(:focus):not(:empty)::before{
+.hi .io:not(:focus):not(:empty) ~ label,
+.hi .io:not(:focus):not(:empty)::before{
     display: none;
 }
 
-.hh .il .im:focus[aria-label]::before,
-.hh .il .im:focus ~ label{
+.hi .io:focus[aria-label]::before,
+.hi .io:focus ~ label{
     position: absolute;
     display: inline-block;
     top: -1.5rem;
@@ -935,56 +935,56 @@ button span[data-cs="1"]::before{
 
 
 /* TEXTS */
-.hh .il:has(>pre.im){
+.hi .im:has(>pre.io){
     padding: .25rem;
     box-shadow: inset 0 0 0 .075rem rgba( var( --primary-rgba ), .1);
 }
 
-.hh .il pre.im{
+.hi .im pre.io{
     display: block;
     height: 15rem;
     resize: vertical;
     overflow: auto;
 }
 
-.hh .il pre.im:not(:focus) ~ label{
+.hi .im pre.io:not(:focus) ~ label{
     left: .35rem;
 }
 
-.hh .il .im{
+.hi .io{
     position: relative;
-    display: inline-block;
-    width: 100%;
+    display: block;
     outline: none;
     background: none;
 }
 
-.hh .ib section.active .il:focus-within>.im,
-.hh .ib section.active ul.il:focus-within .im,
-.hh .ib section.active ol.il:focus-within .im{
+.hi .ic section.active .im.io:focus,
+.hi .ic section.active .im:focus-within>.io,
+.hi .ic section.active ul.im:focus-within .io,
+.hi .ic section.active ol.im:focus-within .io{
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.hh .ib .il .im:focus{
+.hi .io:focus{
     background: rgba( var( --primary-rgba ), .1) !important;
 }
 
-.hh .il .im *{
+.hi .io *{
     user-select: auto;
 }
 
-.hh .il[data-cr="ea"] .im{
+.hi .im[data-cs="eb"]{
     font-size: 1.6rem;
     font-weight: var( --weight-strong-1 );
 }
 
-.hh .il[data-cr="ea"].lc .im{
+.hi .im[data-cs="eb"].le{
     font-weight: var( --weight-normal );
 }
 
 @container adiptal-ui (width < 768px)
 {
-    .hh .il[data-cr="ea"] .im{
+    .hi .im[data-cs="eb"]{
         font-size: 1.5rem;
     }
 }
@@ -992,21 +992,21 @@ button span[data-cs="1"]::before{
 
 
 /* TEXT CONFIG */
-.hh .il .im *{
+.hi .io *{
     cursor: text;
 }
 
 
 
 /* CAPTION */
-.hh .il[data-cr="dn"]>.im:last-child,
-.hh .il[data-cr="dn"]:focus-within>.im:last-child,
-.hh .il[data-cr="ec"]>.im:last-child,
-.hh .il[data-cr="ec"]:focus-within>.im:last-child,
-.hh .il[data-cr="eh"]>.im:last-child,
-.hh .il[data-cr="eh"]:focus-within>.im:last-child,
-.hh .il[data-cr="dk"]>.im:last-child,
-.hh .il[data-cr="dk"]:focus-within>.im:last-child{
+.hi .im[data-cs="dp"]>.io:last-child,
+.hi .im[data-cs="dp"]:focus-within>.io:last-child,
+.hi .im[data-cs="ed"]>.io:last-child,
+.hi .im[data-cs="ed"]:focus-within>.io:last-child,
+.hi .im[data-cs="ei"]>.io:last-child,
+.hi .im[data-cs="ei"]:focus-within>.io:last-child,
+.hi .im[data-cs="dl"]>.io:last-child,
+.hi .im[data-cs="dl"]:focus-within>.io:last-child{
     font-style: italic;
     color: rgba( var( --primary-rgba ), .6);
 }
@@ -1014,18 +1014,18 @@ button span[data-cs="1"]::before{
 
 
 /* LISTS */
-.hh ul.checklist li::before{
+.hi ul.d-checklist li::before{
     font-family: "Font Awesome 5 Free";
     content: '\f0c8';
     font-weight: var( --weight-normal );
 }
 
-.hh ul.checklist li.checked::before{
+.hi ul.d-checklist li.checked::before{
     content: '\f00c';
     font-weight: var( --weight-strong-2 );
 }
 
-.hh .il li.im{
+.hi .im li.io{
     display: list-item;
     width: calc( 100% - 1.5rem );
 }
@@ -1033,20 +1033,20 @@ button span[data-cs="1"]::before{
 
 
 /* TABLES */
-.hh .il .io table tr>.active{
+.hi .im .iq tr>.active{
     background: rgba( var( --primary-rgba ), .1);
 }
 
-.hh .il .io table tr .is{
+.hi .im .iq tr .iu{
     display: none;
 }
 
-.hh .il:focus-within .io table tr .im{
+.hi .im:focus-within .iq tr .io{
     box-shadow: none;
 }
 
-.hh .il .io table th,
-.hh .il .io table td{
+.hi .im .iq th,
+.hi .im .iq td{
     display: table-cell;
     width: auto;
     padding: .5rem 1rem;
@@ -1054,19 +1054,19 @@ button span[data-cs="1"]::before{
 
 
 
-/* dm BUTTON */
-.hh a.il{
-    cursor: default;
+/* dn BUTTON */
+.hi a.im{
+    cursor: auto;
 }
 
 
 
 /* MEDIA EMBED */
-.hh .il .kj{
+.hi .im .kl{
     display: none;
 }
 
-.hh .il .media-embed .overlay{
+.hi .im .d-media-embed .ip{
     position: absolute;
     top: 0;
     left: 0;
@@ -1078,7 +1078,7 @@ button span[data-cs="1"]::before{
 
 
 /* -------------------------  CONTEXT MENU  ------------------------- */
-.it{
+.iv{
     padding: .25rem;
     width: max-content;
     display: none;
@@ -1088,15 +1088,15 @@ button span[data-cs="1"]::before{
     z-index: 9999;
 }
 
-.it *{
+.iv *{
     font-size: .85rem;
 }
 
-.it .iy>button{
+.iv .ja>button{
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.it .jj{
+.iv .jl{
     display: flex;
     justify-content: center;
     gap: .25rem;
@@ -1104,51 +1104,51 @@ button span[data-cs="1"]::before{
 
 
 
-.it.gv .jj>button{
+.iv.gw .jl>button{
     background: rgba( var( --primary-rgba ), .05);
 }
 
 
 
-.it.gm .jj>*{
+.iv.gn .jl>*{
     flex: auto;
     text-align: center;
 }
 
-.it.gm>button{
+.iv.gn>button{
     width: 100%;
     background: rgba( var( --primary-rgba ), .05);
 }
 
 
 
-.it.gy li:not(:empty):not(:last-child){
+.iv.gz li:not(:empty):not(:last-child){
     margin-bottom: .25rem;
 }
 
-.it.gy li button{
+.iv.gz li button{
     width: 100%;
     background: rgba( var( --primary-rgba ), .05);
 }
 
 
 
-.it.gm>.iy{
+.iv.gn>.ja{
     display: block;
     width: 15rem;
 }
 
-.it.gm>.iy:not(:last-child){
+.iv.gn>.ja:not(:last-child){
     margin-bottom: .25rem;
 }
 
-.it.gm>.iy>button{
+.iv.gn>.ja>button{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.it.gm .iy>ul{
+.iv.gn .ja>ul{
     position: relative;
     top: 0 !important;
     left: 0;
@@ -1158,7 +1158,7 @@ button span[data-cs="1"]::before{
     overflow: unset !important;
 }
 
-.it.gm .iy li{
+.iv.gn .ja li{
     margin-top: .25rem;
 }
 /* -------------------------  END CONTEXT MENU  ------------------------- */
@@ -1166,17 +1166,17 @@ button span[data-cs="1"]::before{
 
 
 /* -------------------------  DROPDOWN  ------------------------- */
-.iy{
+.ja{
     position: relative;
     display: inline-block;
 }
 
-.iy>button{
+.ja>button{
     width: 100%;
     height: 100%;
 }
 
-.iy ul{
+.ja ul{
     position: absolute;
     height: max-content;
     width: max-content;
@@ -1186,21 +1186,21 @@ button span[data-cs="1"]::before{
     z-index: 3;
 }
 
-.iy>ul{
+.ja>ul{
     position: fixed;
 }
 
-.iy ul li{
+.ja ul li{
     display: block;
 }
 
-.iy ul li>.iy{
+.ja ul li>.ja{
     display: block;
 }
 
-.iy li>small,
-.iy li>label,
-.iy li>button{
+.ja li>small,
+.ja li>label,
+.ja li>button{
     position: relative;
     display: flex;
     align-items: center;
@@ -1210,17 +1210,17 @@ button span[data-cs="1"]::before{
     cursor: pointer;
 }
 
-.iy li>small{
+.ja li>small{
     font-size: .85rem;
     color: rgba( var( --primary-rgba ), .6);
     cursor: auto;
 }
 
-.iy li>label:not(.ld)>i{
+.ja li>label:not(.lf)>i{
     margin-left: 1.5rem;
 }
 
-.hh .iy label::before{
+.hi .ja label::before{
     content: '';
     position: absolute;
     top: 0;
@@ -1230,7 +1230,7 @@ button span[data-cs="1"]::before{
     margin: auto;
 }
 
-.hh .iy label:hover::before{
+.hi .ja label:hover::before{
     background: rgba( var( --primary-rgba ), .05);
 }
 /* -------------------------  END DROPDOWN  ------------------------- */
@@ -1238,21 +1238,21 @@ button span[data-cs="1"]::before{
 
 
 /* -------------------------  SELECT  ------------------------- */
-.he select{
+.hf select{
     width: 100%;
     padding: .25rem .5rem;
 }
 
-.ku{
+.kw{
     position: relative;
     display: inline-block;
 }
 
-.ku>button{
+.kw>button{
     width: 100%;
 }
 
-.ku ul{
+.kw ul{
     position: fixed;
     height: max-content;
     width: max-content;
@@ -1262,12 +1262,12 @@ button span[data-cs="1"]::before{
     z-index: 3;
 }
 
-.ku ul li{
+.kw ul li{
     display: block;
 }
 
-.ku li>label,
-.ku li>button{
+.kw li>label,
+.kw li>button{
     position: relative;
     display: block;
     padding: .25rem .5rem;
@@ -1280,7 +1280,7 @@ button span[data-cs="1"]::before{
 
 /* -------------------------  MODAL  ------------------------- */
 /* MODAL BOX */
-.iz{
+.jb{
     position: fixed;
     top: 0;
     left: 0;
@@ -1294,16 +1294,16 @@ button span[data-cs="1"]::before{
     z-index: 9994;
 }
 
-.iz[data-cp="dn"],
-.iz[data-cp="dh"],
-.iz[data-cp="di"],
-.iz[data-cp="dk"],
-.iz[data-cp="dl"],
-.iz[data-cp="dm"]{
+.jb[data-cq="dp"],
+.jb[data-cq="di"],
+.jb[data-cq="dj"],
+.jb[data-cq="dl"],
+.jb[data-cq="dm"],
+.jb[data-cq="dn"]{
     z-index: 9995;
 }
 
-.iz[data-cp="dg"]{
+.jb[data-cq="dh"]{
     justify-content: flex-start;
     align-items: flex-start;
     z-index: 9996;
@@ -1311,20 +1311,20 @@ button span[data-cs="1"]::before{
 }
 
 @media(width >= 768px) , (height >= 500px){
-    .iz[data-cp="dg"] .ja{
+    .jb[data-cq="dh"] .jc{
         max-width: 500px;
     }
 }
 
-.iz[data-cp="dn"].gi{
+.jb[data-cq="dp"].gj{
     z-index: 9997;
 }
 
-.st-dark-mode .iz{
+.st-dark-mode .jb{
     background: rgba( var( --secondary-rgba ), .9);
 }
 
-.iz .ja{
+.jb .jc{
     display: flex;
     flex-direction: column;
     width: 35rem;
@@ -1334,20 +1334,20 @@ button span[data-cs="1"]::before{
     box-shadow: 0 0 0 .075rem rgba( var( --primary-rgba ), .1);
 }
 
-.iz .ja.ha{
+.jb .jc.hb{
     width: 75%;
     max-height: 75%;
 }
 
-.iz .ja.hb{
+.jb .jc.hc{
     width: 100%;
     height: 100%;
     max-height: 100%;
 }
 
 @media(width < 768px) , (height < 500px){
-    .iz .ja,
-    .iz .ja.ha{
+    .jb .jc,
+    .jb .jc.hb{
         width: 100%;
         height: 100%;
         max-height: 100%;
@@ -1358,7 +1358,7 @@ button span[data-cs="1"]::before{
 
 
 /* MODAL HEADER */
-.iz .ja>header h2{
+.jb .jc>header h2{
     padding: .5rem 1rem;
     border-radius: 0;
     text-transform: uppercase;
@@ -1368,123 +1368,123 @@ button span[data-cs="1"]::before{
 
 
 /* MODAL CONTENTS */
-.iz .kl{
+.jb .kn{
     flex: auto;
     padding: 1rem 1rem .5rem;
     overflow: auto;
 }
 
-.iz[data-cp="gc"] .kl{
+.jb[data-cq="gd"] .kn{
     padding: 1rem;
 }
 
-.iz[data-cp="dn"] .kl,
-.iz[data-cp="dy"] .kl,
-.iz[data-cp="dx"] .kl,
-.iz[data-cp="dz"] .kl{
+.jb[data-cq="dp"] .kn,
+.jb[data-cq="dz"] .kn,
+.jb[data-cq="dy"] .kn,
+.jb[data-cq="ea"] .kn{
     padding: 0;
 }
 
 
 
 /* MODAL BUTTON */
-.iz .ja button{
+.jb .jc button{
     padding: .25rem 1rem;
     background: rgba( var( --primary-rgba ), .1);
 }
-.iz .ja .kl button{
+.jb .jc .kn button{
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.iz .ja .iy ul button,
-.iz .ja .ku ul button{
+.jb .jc .ja ul button,
+.jb .jc .kw ul button{
     background: none;
 }
 
-.iz .ja .kl>button,
-.iz .ja .kl .ku>button{
+.jb .jc .kn>button,
+.jb .jc .kn .kw>button{
     padding: .35rem 1rem;
 }
 
 
 
 /* MODAL TOOLBAR */
-.iz .ja>.kx{
+.jb .jc>.kz{
     padding: .5rem 1rem;
 }
 
-.iz .ja>.kx>ul{
+.jb .jc>.kz>ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: .5rem;
 }
 
-.iz .ja>.kx>ul li.jb{
+.jb .jc>.kz>ul li.jd{
     margin-right: auto;
 }
 
-.iz .ja .jm{
+.jb .jc .jo{
     display: none;
 }
 
 
 
 /* MODAL TABLE */
-.iz .kl>table{
+.jb .kn>table{
     width: 100%;
     border-collapse: collapse;
 }
 
-.iz .kl>table tr>*{
+.jb .kn>table tr>*{
     padding: .5rem 1rem;
     border: .25rem solid var( --secondary );
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.iz .kl>table th{
+.jb .kn>table th{
     background: rgba( var( --primary-rgba ), .1);
 }
 
-.iz[data-cp="dj"] .ja{
+.jb[data-cq="dk"] .jc{
     width: auto;
 }
 
 @media(width < 768px) , (height < 500px){
-    .iz[data-cp="dj"] .ja{
+    .jb[data-cq="dk"] .jc{
         width: 100%;
         height: 100%;
         max-height: 100%;
     }
 }
 
-.iz[data-cp="dj"] .kl>table tr>:first-of-type{
+.jb[data-cq="dk"] .kn>table tr>:first-of-type{
     box-shadow: none;
 }
 
-.iz[data-cp="dj"] .kl>table tr>:last-of-type{
+.jb[data-cq="dk"] .kn>table tr>:last-of-type{
     text-align: right;
 }
 
 
 
-/* MODAL dn */
-.iz[data-cp="dn"] .ja .kl{
+/* MODAL dp */
+.jb[data-cq="dp"] .jc .kn{
     display: flex;
     flex-direction: column;
 }
 
 
-.iz[data-cp="dn"] .jh{
+.jb[data-cq="dp"] .jj{
     display: flex;
 }
 
-.iz[data-cp="dn"] .jh:first-of-type{
+.jb[data-cq="dp"] .jj:first-of-type{
     margin: 1rem 1rem .5rem;
     background: rgba( var( --primary-rgba ), .025);
 }
 
-.iz[data-cp="dn"] .jh:last-of-type{
+.jb[data-cq="dp"] .jj:last-of-type{
     flex: 100%;
     flex-direction: column;
     justify-content: space-between;
@@ -1492,17 +1492,17 @@ button span[data-cs="1"]::before{
 }
 
 
-.iz[data-cp="dn"] .ja .he{
+.jb[data-cq="dp"] .jc .hf{
     flex: auto;
     margin: 0;
 }
 
-.iz[data-cp="dn"] .ja .he:not(:focus-within){
+.jb[data-cq="dp"] .jc .hf:not(:focus-within){
     box-shadow: none;
 }
 
 
-.iz[data-cp="dn"] .ji{
+.jb[data-cq="dp"] .jk{
     display: grid;
     --images: 5;
     grid-template-columns: repeat( var( --images ) , minmax( 0 , 1fr ) );
@@ -1513,34 +1513,34 @@ button span[data-cs="1"]::before{
 
 @media(width < 550px)
 {
-    .iz[data-cp="dn"] .ji{
+    .jb[data-cq="dp"] .jk{
         --images: 1;
     }
 }
 
 @media(width >= 550px) and (width < 768px)
 {
-    .iz[data-cp="dn"] .ji{
+    .jb[data-cq="dp"] .jk{
         --images: 2;
     }
 }
 
 @media(width >= 768px) and (width < 992px)
 {
-    .iz[data-cp="dn"] .ji{
+    .jb[data-cq="dp"] .jk{
         --images: 3;
     }
 }
 
 @media(width >= 992px) and (width < 1200px)
 {
-    .iz[data-cp="dn"] .ji{
+    .jb[data-cq="dp"] .jk{
         --images: 4;
     }
 }
 
 
-.iz[data-cp="dn"] .ji img{
+.jb[data-cq="dp"] .jk img{
     display: block;
     width: 100%;
     aspect-ratio: 3/2;
@@ -1551,14 +1551,14 @@ button span[data-cs="1"]::before{
     cursor: pointer;
 }
 
-.iz[data-cp="dn"] .ji img.active{
+.jb[data-cq="dp"] .jk img.active{
     box-shadow: 0 0 0 .075rem var( --grey-3 );
 }
 
 
 
-/* MODAL dm */
-.iz[data-cp="dm"] .kl button{
+/* MODAL dn */
+.jb[data-cq="dn"] .kn button{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1569,47 +1569,47 @@ button span[data-cs="1"]::before{
 
 
 /* MODAL METADATA */
-.iz[data-cp="dg"] .kl>*{
+.jb[data-cq="dh"] .kn>*{
     display: block;
     margin: 1rem auto;
 }
 
-.iz[data-cp="dg"] .kl>:first-child{
+.jb[data-cq="dh"] .kn>:first-child{
     margin-top: .5rem;
 }
 
 /* COVER IMAGE */
-.iz[data-cp="dg"] .kl>.gh,
-.iz[data-cp="dg"] .kl .ku{
+.jb[data-cq="dh"] .kn>.gi,
+.jb[data-cq="dh"] .kn .kw{
     position: relative;
 }
 
-.iz[data-cp="dg"] .kl>.gh img{
+.jb[data-cq="dh"] .kn>.gi img{
     width: 100%;
 }
 
-.iz[data-cp="dg"] .kl>.gh .gl{
+.jb[data-cq="dh"] .kn>.gi .gm{
     position: absolute;
     top: 1rem;
     right: 1rem;
     background: var( --secondary );
 }
 
-.iz[data-cp="dg"] .kl>.gh .gj{
+.jb[data-cq="dh"] .kn>.gi .gk{
     width: 100%;
     padding: .35rem 1rem;
 }
 
 /* SELECT */
-.iz[data-cp="dg"] .kl .ku{
+.jb[data-cq="dh"] .kn .kw{
     width: 100%;
 }
 
-.iz[data-cp="dg"] .kl .ku>button>i{
+.jb[data-cq="dh"] .kn .kw>button>i{
     float: right;
 }
 
-.iz[data-cp="dg"] .kl .kn{
+.jb[data-cq="dh"] .kn .kp{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1618,18 +1618,18 @@ button span[data-cs="1"]::before{
     overflow: auto;
 }
 
-.iz[data-cp="dg"] .kl .kn button{
+.jb[data-cq="dh"] .kn .kp button{
     display: flex;
     align-items: center;
 }
 
-.iz[data-cp="dg"] .kl .kn button *{
+.jb[data-cq="dh"] .kn .kp button *{
     color: rgba( var( --primary-rgba ), .6);
     font-size: 1.1rem;
     font-weight: var( --weight-strong-2 );
 }
 
-.iz[data-cp="dg"] .kl .kn input{
+.jb[data-cq="dh"] .kn .kp input{
     flex: auto;
     width: 100%;
     padding: .3rem .5rem;
@@ -1637,12 +1637,12 @@ button span[data-cs="1"]::before{
     box-shadow: inset 0 0 .2rem .1rem rgba( var( --primary-rgba ), .1);
 }
 
-.iz[data-cp="dg"] .kl .kn input:focus{
+.jb[data-cq="dh"] .kn .kp input:focus{
     background: rgba( var( --blue-rgba ), .05);
     box-shadow: inset 0 0 .2rem .1rem rgba( var( --blue-rgba ), .2);
 }
 
-.iz[data-cp="dg"] .kl .kn input.disabled{
+.jb[data-cq="dh"] .kn .kp input.disabled{
     display: none;
 }
 /* -------------------------  END MODAL  ------------------------- */
@@ -1650,7 +1650,7 @@ button span[data-cs="1"]::before{
 
 
 /* -------------------------  TOAST  ------------------------- */
-.jf{
+.jh{
     position: fixed;
     top: 0;
     right: 0;
@@ -1670,12 +1670,12 @@ button span[data-cs="1"]::before{
 
 @media(width < 550px)
 {
-    .jf{
+    .jh{
         width: 100%;
     }
 }
 
-.jg{
+.ji{
     width: 100%;
     border-radius: .5rem;
     overflow: hidden;
@@ -1685,14 +1685,14 @@ button span[data-cs="1"]::before{
     pointer-events: all;
 }
 
-.jg.progress{
+.ji.progress{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
 }
 
-.jg.lb{
+.ji.ld{
     animation: toastHide .15s linear forwards;
 }
 
@@ -1706,25 +1706,25 @@ button span[data-cs="1"]::before{
     100%   { transform: translateY(100%); opacity: 0; max-height: 0; }
 }
 
-.jg .kz:not(:empty){
+.ji .lb:not(:empty){
     padding: .5rem 1rem;
 }
 
-.jg .kz:only-child{
+.ji .lb:only-child{
     text-align: center;
 }
 
-.jg .la{
+.ji .lc{
     padding: 0 1rem .5rem;
 }
 
 
 /* TOAST TYPE */
-.jg .kz{
+.ji .lb{
     font-weight: var( --weight-strong-1 );
 }
 
-.jg::before{
+.ji::before{
     content: '';
     position: absolute;
     top: 0;
@@ -1734,44 +1734,44 @@ button span[data-cs="1"]::before{
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.jg.danger::before{
+.ji.danger::before{
     background: rgba( var( --red-rgba ), .2);
 }
 
-.jg.warning::before{
+.ji.warning::before{
     background: rgba( var( --yellow-rgba ), .2);
 }
 
-.jg.success::before{
+.ji.success::before{
     background: rgba( var( --green-rgba ), .2);
 }
 
-.jg.info::before{
+.ji.info::before{
     background: rgba( var( --blue-rgba ), .2);
 }
 
-.jg.progress i{
+.ji.progress i{
     font-size: 1.15rem;
     color: var( --green );
 }
 
-.jg.progress .kz{
+.ji.progress .lb{
     padding: .5rem 0;
 }
 
-.jg.progress .la{
+.ji.progress .lc{
     display: none;
 }
 
 
 /* TOAST TOOLBARS */
-.jg .kx{
+.ji .kz{
     display: flex;
     padding: .5rem 1rem;
     gap: .5rem;
 }
 
-.jg .kx button{
+.ji .kz button{
     flex: auto;
     text-align: center;
     background: rgba( var( --primary-rgba ), .1);
