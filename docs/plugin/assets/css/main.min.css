@@ -942,9 +942,15 @@ button span[data-ct="1"]::before{
 
 .hi .io{
     position: relative;
-    display: block;
+    display: inline-block;
+    width: 100%;
     outline: none;
     background: none;
+}
+
+.hi .im.io{
+    display: block;
+    width: unset;
 }
 
 .hi .ic section.active .im.io:focus,
