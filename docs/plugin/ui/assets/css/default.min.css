@@ -114,7 +114,7 @@ ol{
 .adiptal-ui th,
 .adiptal-ui pre>code,
 .adiptal-ui blockquote,
-.adiptal-ui .io:not([data-cs="eb"]){
+.adiptal-ui ._obf_i:not([data-_obf_n="_obf_bp"]){
     color: rgba( var( --primary-rgba ), .85);
 }
 
@@ -254,9 +254,9 @@ ol{
 }
 
 
-/* --------------------- dn --------------------- */
+/* --------------------- _obf_aw --------------------- */
 .adiptal-ui section>a,
-.adiptal-ui section div:not(.io)>a{
+.adiptal-ui section div:not(._obf_i)>a{
     display: block;
     text-decoration: none;
     color: rgba( var( --primary-rgba ), .85);
@@ -278,7 +278,7 @@ ol{
 }
 
 
-/* --------------------- dp --------------------- */
+/* --------------------- _obf_x --------------------- */
 .adiptal-ui figure.d-image img{
     display: block;
     width: 100%;
@@ -338,21 +338,21 @@ ol{
 }
 
 .adiptal-ui ul.d-checklist li::before,
-.hi ul.d-checklist button{
+._obf_b ul.d-checklist button{
     position: absolute;
     left: -1.5rem;
 }
 
-.hi ul.d-checklist button{
+._obf_b ul.d-checklist button{
     top: .35rem;
     padding: .45rem;
     z-index: 1;
 }
 
 
-/* --------------------- dl --------------------- */
+/* --------------------- _obf_ba --------------------- */
 .adiptal-ui .d-table>div,
-.adiptal-ui .iq{
+.adiptal-ui ._obf_bx{
     table-layout: fixed;
     overflow-x: auto;
 }
@@ -401,7 +401,7 @@ ol{
 }
 
 
-/* --------------------- dq --------------------- */
+/* --------------------- _obf_cz --------------------- */
 .adiptal-ui .d-container{
     display: flex;
     flex-wrap: wrap;
@@ -412,7 +412,7 @@ ol{
 }
 
 
-/* ------------------------- dt ------------------------- */
+/* ------------------------- _obf_cw ------------------------- */
 .adiptal-ui .d-carousel{
     box-shadow: 0 0 0 .05rem rgba( var( --primary-rgba ), .2);
 }
@@ -441,7 +441,7 @@ ol{
 }
 
 
-/* --------------------- dr --------------------- */
+/* --------------------- _obf_cv --------------------- */
 .adiptal-ui .d-accordion{
     box-shadow: 0 0 0 .05rem rgba( var( --primary-rgba ), .2);
 }
@@ -483,7 +483,7 @@ ol{
 }
 
 
-/* --------------------- ds --------------------- */
+/* --------------------- _obf_ch --------------------- */
 .adiptal-ui .d-tab{
     position: relative;
     display: flex;
@@ -554,7 +554,7 @@ ol{
 }
 
 .adiptal-ui ul.d-checklist li[data-dir]::before,
-.hi ul.d-checklist [data-dir] button{
+._obf_b ul.d-checklist [data-dir] button{
     left: unset;
     right: -1.5rem;
 }

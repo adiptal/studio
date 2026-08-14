@@ -1,3 +1,10 @@
+/*
+        Product            : Adiptal Studio
+        All Information    : https://github.com/adiptal/studio
+*/
+
+
+
 /* ------------------------- DEFAULT ------------------------- */
 :root{
     --font-name: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -32,8 +39,8 @@
     box-sizing: border-box;
 }
 
-.hh,
-.hi{
+._obf_bh,
+._obf_b{
     width: 100vw;
     height: 100vh;
 }
@@ -134,7 +141,7 @@ i{
 }
 
 
-a .io{
+a ._obf_i{
     pointer-events: all;
 }
 
@@ -148,7 +155,7 @@ a .io{
 
 input,
 textarea,
-.io{
+._obf_i{
     user-select: text;
 }
 
@@ -157,20 +164,20 @@ strong{
 }
 
 
-.hi .kz [data-cr="es"],
-.hi .ho .lc [data-cr="es"] label{
+._obf_b ._obf_ag [data-_obf_f="_obf_ca"],
+._obf_b ._obf_e ._obf_k [data-_obf_f="_obf_ca"] label{
     position: relative;
     height: 100%;
     aspect-ratio: 1/1;
     box-shadow: inset 0 0 0 .1rem var( --red );
 }
 
-.hi .ho .lc [data-cr="es"] label{
+._obf_b ._obf_e ._obf_k [data-_obf_f="_obf_ca"] label{
     border-radius: 1rem;
 }
 
-.hi .kz [data-cr="es"]::after,
-.hi .ho .lc [data-cr="es"] label::after{
+._obf_b ._obf_ag [data-_obf_f="_obf_ca"]::after,
+._obf_b ._obf_e ._obf_k [data-_obf_f="_obf_ca"] label::after{
     content: '';
     position: absolute;
     top: 0;
@@ -185,11 +192,11 @@ strong{
     background: var( --red );
 }
 
-.hi [data-cr="es"].disabled label{
+._obf_b [data-_obf_f="_obf_ca"].disabled label{
     box-shadow: inset 0 0 0 .1rem rgba( var( --primary-rgba ), .4) !important;
 }
 
-.hi [data-cr="es"].disabled label::after{
+._obf_b [data-_obf_f="_obf_ca"].disabled label::after{
     background: rgba( var( --primary-rgba ), .4) !important;
 }
 /* ------------------------- END DEFAULT ------------------------- */
@@ -236,21 +243,21 @@ button:not(.disabled):hover::before{
 
 button:not(.disabled):active::before,
 button:not(.disabled).active::before,
-button:not(.disabled).ki::before{
+button:not(.disabled)._obf_go::before{
     background: rgba( var( --primary-rgba ), .1);
 }
 
-.d-accordion>.jv>button.active::before,
+.d-accordion>._obf_bd>button.active::before,
 .d-tab .d-tab-heading li.active button::before{
     background: none;
 }
 
-.d-accordion>.jv>button.active,
+.d-accordion>._obf_bd>button.active,
 .d-tab li.active{
     border-radius: 0;
 }
 
-button span[data-ct]{
+button span[data-_obf_m]{
     position: relative;
     display: inline-block;
     margin-left: 1.5rem;
@@ -259,7 +266,7 @@ button span[data-ct]{
     border-radius: .35rem;
 }
 
-button span[data-ct]::before{
+button span[data-_obf_m]::before{
     content: '';
     position: absolute;
     top: -.1rem;
@@ -270,7 +277,7 @@ button span[data-ct]::before{
     background: var( --grey-3 );
 }
 
-button span[data-ct="1"]::before{
+button span[data-_obf_m="1"]::before{
     left: unset;
     right: -.1rem;
     background: var( --primary );
@@ -290,16 +297,16 @@ button span[data-ct="1"]::before{
 
 
 /* ------------------------- ADIPTAL UI ------------------------- */
-.hi .adiptal-ui{
+._obf_b .adiptal-ui{
     position: relative;
     min-height: 100%;
 }
 
-.hi .adiptal-ui>section{
+._obf_b .adiptal-ui>section{
     box-shadow: none !important;
 }
 
-.hi .adiptal-ui>section:only-child{
+._obf_b .adiptal-ui>section:only-child{
     flex: 1 0 100%;
 }
 /* ------------------------- END ADIPTAL UI ------------------------- */
@@ -307,38 +314,38 @@ button span[data-ct="1"]::before{
 
 
 /* ------------------------- FORM INPUT ------------------------- */
-.hf{
+._obf_j{
     position: relative;
     margin: 1rem auto;
     box-shadow: inset 0 0 0 .075rem rgba( var( --primary-rgba ), .2);
 }
 
-.hf:first-of-type{
+._obf_j:first-of-type{
     margin-top: 0;
 }
 
-.hf:last-of-type{
+._obf_j:last-of-type{
     margin-bottom: 0;
 }
 
-.hf:focus-within{
+._obf_j:focus-within{
     box-shadow: inset 0 0 0 .075rem var( --blue );
 }
 
-.hf input:not([type="range"]):not([type="color"]),
-.hf textarea{
+._obf_j input:not([type="range"]):not([type="color"]),
+._obf_j textarea{
     display: block;
     width: 100%;
     box-shadow: none;
     padding: 1.5rem .5rem .5rem;
 }
 
-.hf textarea{
+._obf_j textarea{
     min-height: 6rem;
 }
 
-.hf input ~ label,
-.hf textarea ~ label{
+._obf_j input ~ label,
+._obf_j textarea ~ label{
     position: absolute;
     top: .25rem;
     left: .5rem;
@@ -348,8 +355,8 @@ button span[data-ct="1"]::before{
     pointer-events: none;
 }
 
-.hf input:focus ~ label,
-.hf textarea:focus ~ label{
+._obf_j input:focus ~ label,
+._obf_j textarea:focus ~ label{
     color: var( --blue );
 }
 /* ------------------------- END FORM INPUT ------------------------- */
@@ -357,7 +364,7 @@ button span[data-ct="1"]::before{
 
 
 /* ------------------------- TOOLTIP ------------------------- */
-.lq{
+._obf_fg{
     position: fixed;
     display: inline-block;
     padding: .25rem .5rem;
@@ -368,7 +375,7 @@ button span[data-ct="1"]::before{
     z-index: 9999;
 }
 
-.st-dark-mode .lq{
+.st-dark-mode ._obf_fg{
     background: var( --primary );
 }
 /* ------------------------- END TOOLTIP ------------------------- */
@@ -376,7 +383,7 @@ button span[data-ct="1"]::before{
 
 
 /* -------------------------  CREATE RECTANGLE  ------------------------- */
-.kf{
+._obf_cy{
     position: absolute;
     display: none;
     pointer-events: none;
@@ -388,35 +395,35 @@ button span[data-ct="1"]::before{
 
 
 /* -------------------------  EDITOR  ------------------------- */
-.hi{
+._obf_b{
     display: flex;
     background: var( --secondary );
 }
 
-.hi i{
+._obf_b i{
     font-size: .85rem;
 }
 
-.hi .hn,
-.hi .kz,
-.hi .ht,
-.hi .ia,
-.hi .ic,
-.hi .adiptal-ui{
+._obf_b ._obf_bu,
+._obf_b ._obf_ag,
+._obf_b ._obf_eo,
+._obf_b ._obf_au,
+._obf_b ._obf_r,
+._obf_b .adiptal-ui{
     border-radius: 0;
 }
 
 
 
 /* EDITOR CONTAINERS */
-.hi .hp{
+._obf_b ._obf_cb{
     display: flex;
     flex-direction: column;
     flex: auto;
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.hi .hp .kz>div{
+._obf_b ._obf_cb ._obf_ag>div{
     display: flex;
     gap: .5rem;
 }
@@ -424,7 +431,7 @@ button span[data-ct="1"]::before{
 
 
 /* SIDEBAR */
-.hi .hn{
+._obf_b ._obf_bu{
     display: none;
     flex: 0 0 15rem;
     width: 100%;
@@ -434,7 +441,7 @@ button span[data-ct="1"]::before{
     z-index: 4;
 }
 
-.hi .hn.hm{
+._obf_b ._obf_bu._obf_dq{
     flex: 0 0 20rem;
     border-right: none;
     border-left: solid .2rem rgba( var( --primary-rgba ), .15);
@@ -442,24 +449,24 @@ button span[data-ct="1"]::before{
 
 @media(width < 992px)
 {
-    .hi .hn{
+    ._obf_b ._obf_bu{
         position: absolute;
     }
 
-    .hi .hn.hm{
+    ._obf_b ._obf_bu._obf_dq{
         right: 0;
     }
 }
 
 @media(width < 550px)
 {
-    .hi .hn,
-    .hi .hn.hm{
+    ._obf_b ._obf_bu,
+    ._obf_b ._obf_bu._obf_dq{
         max-width: unset;
     }
 }
 
-.hi .hn .ho{
+._obf_b ._obf_bu ._obf_e{
     display: none;
     flex-direction: column;
     height: 100%;
@@ -468,54 +475,54 @@ button span[data-ct="1"]::before{
 
 
 
-.hi .ho header{
+._obf_b ._obf_e header{
     padding: .5rem 1rem;
     gap: .5rem;
 }
 
-.hi .ho header,
-.hi .ho header>.ja>button,
-.hi .ho .lc button{
+._obf_b ._obf_e header,
+._obf_b ._obf_e header>._obf_p>button,
+._obf_b ._obf_e ._obf_k button{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.hi .ho header h2{
+._obf_b ._obf_e header h2{
     font-size: 1rem;
     font-weight: var( --weight-strong-1 );
     text-transform: uppercase;
 }
 
-.hi .ho header>.ja{
+._obf_b ._obf_e header>._obf_p{
     flex: auto;
 }
 
 
 
-.hi .ho header>button,
-.hi .ho .ja>button,
-.hi .ho .lc>button,
-.hi .ho .lc .hj>button{
+._obf_b ._obf_e header>button,
+._obf_b ._obf_e ._obf_p>button,
+._obf_b ._obf_e ._obf_k>button,
+._obf_b ._obf_e ._obf_k ._obf_ac>button{
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.hi .ho .lc .hj>button,
-.hi .ho .lc .hj>label,
-.hi .ho .lc .ja>button{
+._obf_b ._obf_e ._obf_k ._obf_ac>button,
+._obf_b ._obf_e ._obf_k ._obf_ac>label,
+._obf_b ._obf_e ._obf_k ._obf_p>button{
     padding: .4rem .6rem;
     font-size: .85rem;
     text-transform: uppercase;
     font-weight: var( --weight-strong-1 );
 }
 
-.hi .ho .lc .ja>button>i{
+._obf_b ._obf_e ._obf_k ._obf_p>button>i{
     padding-top: .25rem;
 }
 
 
 
-.hi .ho .lc{
+._obf_b ._obf_e ._obf_k{
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -523,55 +530,55 @@ button span[data-ct="1"]::before{
     overflow: auto;
 }
 
-.hi .ho .lc section{
+._obf_b ._obf_e ._obf_k section{
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.hi .ho .lc .hj:empty,
-.hi .ho .lc .hj:has(>.la:empty),
-.hi .ho .lc .la:empty{
+._obf_b ._obf_e ._obf_k ._obf_ac:empty,
+._obf_b ._obf_e ._obf_k ._obf_ac:has(>._obf_o:empty),
+._obf_b ._obf_e ._obf_k ._obf_o:empty{
     display: none !important;
 }
 
-.hi .ho .lc .hj{
+._obf_b ._obf_e ._obf_k ._obf_ac{
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
 
-.hi .ho .lc>button{
+._obf_b ._obf_e ._obf_k>button{
     width: 100%;
 }
 
-.hi .ho .lc .la{
+._obf_b ._obf_e ._obf_k ._obf_o{
     align-items: center;
     gap: .5rem;
     padding: .25rem .5rem;
 }
 
-.hi .ho .hf{
+._obf_b ._obf_e ._obf_j{
     margin: 0;
 }
 
-.hi .ho .hj .la:not(label){
+._obf_b ._obf_e ._obf_ac ._obf_o:not(label){
     padding: 0;
     background: none;
 }
 
 
-.hi .ho[data-cq="df"] .hj .la,
-.hi .ho[data-cq="de"] .hj label.la{
+._obf_b ._obf_e[data-_obf_d="_obf_w"] ._obf_ac ._obf_o,
+._obf_b ._obf_e[data-_obf_d="_obf_az"] ._obf_ac label._obf_o{
     justify-content: space-between;
 }
 
 
-.hi .ho[data-cq="de"] .hj .hq[data-cr="es"]:not(.active){
+._obf_b ._obf_e[data-_obf_d="_obf_az"] ._obf_ac ._obf_z[data-_obf_f="_obf_ca"]:not(.active){
     cursor: not-allowed;
 }
 
-.hi .ho[data-cq="de"] .hj .la:not(label)>*{
+._obf_b ._obf_e[data-_obf_d="_obf_az"] ._obf_ac ._obf_o:not(label)>*{
     flex: 0 0 calc( 25% - .375rem );
     display: block;
     padding: .4rem;
@@ -579,21 +586,21 @@ button span[data-ct="1"]::before{
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.hi .ho[data-cq="de"] .hj .la>.ja{
+._obf_b ._obf_e[data-_obf_d="_obf_az"] ._obf_ac ._obf_o>._obf_p{
     padding: 0;
 }
 
-.hi .ho[data-cq="de"] .hj .la>.ja>button{
+._obf_b ._obf_e[data-_obf_d="_obf_az"] ._obf_ac ._obf_o>._obf_p>button{
     padding: .4rem;
     justify-content: center;
     background: none;
 }
 
-.hi .ho[data-cq="de"] .hj .lh li{
+._obf_b ._obf_e[data-_obf_d="_obf_az"] ._obf_ac ._obf_id li{
     display: inline-block;
 }
 
-.hi .ho[data-cq="de"] .hj .lh button{
+._obf_b ._obf_e[data-_obf_d="_obf_az"] ._obf_ac ._obf_id button{
     display: inline-block;
     text-align: center;
 }
@@ -601,15 +608,15 @@ button span[data-ct="1"]::before{
 
 
 /* TOOLBAR */
-.hi .kz,
-.hi .kr,
-.hi footer{
+._obf_b ._obf_ag,
+._obf_b ._obf_ah,
+._obf_b footer{
     flex-wrap: wrap;
     gap: .5rem;
     padding: .5rem;
 }
 
-.hi .kz{
+._obf_b ._obf_ag{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -617,25 +624,25 @@ button span[data-ct="1"]::before{
 }
 
 
-.la{
+._obf_o{
     display: flex;
     flex-wrap: wrap;
 }
 
-.la:empty{
+._obf_o:empty{
     display: none;
 }
 
-.hi .la{
+._obf_b ._obf_o{
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.jb .la{
+._obf_g ._obf_o{
     gap: .5rem;
     justify-content: space-between;
 }
 
-.jb .la>.hf{
+._obf_g ._obf_o>._obf_j{
     flex: 0 0 calc( 33.33% - .5rem );
     margin: 0;
 }
@@ -643,28 +650,28 @@ button span[data-ct="1"]::before{
 
 
 /* FILE OPTIONS */
-.hi .kg{
+._obf_b ._obf_av{
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
 
-.hi .kg li{
+._obf_b ._obf_av li{
     margin: 0;
 }
 
-.hi .kg label{
+._obf_b ._obf_av label{
     display: block;
     padding: .25rem .5rem;
     font-weight: var( --weight-normal );
     background: rgba( var( --primary-rgba ), .05);
 }
-.hi .kg button{
+._obf_b ._obf_av button{
     width: 100%;
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.hi .kg div{
+._obf_b ._obf_av div{
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -673,18 +680,18 @@ button span[data-ct="1"]::before{
     box-shadow: inset 0 0 0 .1rem rgba( var( --primary-rgba ), .05);
 }
 
-.hi .kg input{
+._obf_b ._obf_av input{
     position: relative;
     padding: .25rem .5rem;
     background: var( --secondary );
     border: solid .075rem rgba( var( --primary-rgba ), .1);
 }
 
-.hi .kg input:focus{
+._obf_b ._obf_av input:focus{
     border: solid .075rem var( --blue );
 }
 
-.hi .kg input:not(:disabled):not(:valid):not(:focus)::before{
+._obf_b ._obf_av input:not(:disabled):not(:valid):not(:focus)::before{
     content: '';
     position: absolute;
     top: 0;
@@ -697,23 +704,23 @@ button span[data-ct="1"]::before{
     pointer-events: none;
 }
 
-.hi .kg input:not(:disabled):not(:valid):not(:focus)::before{
+._obf_b ._obf_av input:not(:disabled):not(:valid):not(:focus)::before{
     content: attr( aria-label );
 }
 
 
 
 /* SCROLLABLE */
-.hi .ht{
+._obf_b ._obf_eo{
     flex: auto;
 }
 
-.hi .ht,
-.hi .ia{
+._obf_b ._obf_eo,
+._obf_b ._obf_au{
     overflow: hidden;
 }
 
-.hi .ia{
+._obf_b ._obf_au{
     width: auto;
     height: 100%;
     max-width: 100%;
@@ -722,7 +729,7 @@ button span[data-ct="1"]::before{
 
 
 
-.hi .ic{
+._obf_b ._obf_r{
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -732,11 +739,11 @@ button span[data-ct="1"]::before{
 
 
 /* NESTED ELEMENTS */
-.hi .ia>.ic>.adiptal-ui>section::before,
-.hi .ic .im[data-cs="ds"]>.d-tab-body>section::before,
-.hi .ic .im[data-cs="dr"]>.jv>section::before,
-.hi .ic .im[data-cs="dq"]>section::before,
-.hi .ic .im[data-cs="dt"]>section::before{
+._obf_b ._obf_au>._obf_r>.adiptal-ui>section::before,
+._obf_b ._obf_r ._obf_h[data-_obf_n="_obf_ch"]>.d-tab-body>section::before,
+._obf_b ._obf_r ._obf_h[data-_obf_n="_obf_cv"]>._obf_bd>section::before,
+._obf_b ._obf_r ._obf_h[data-_obf_n="_obf_cz"]>section::before,
+._obf_b ._obf_r ._obf_h[data-_obf_n="_obf_cw"]>section::before{
     content: '';
     position: absolute;
     top: 0;
@@ -747,32 +754,32 @@ button span[data-ct="1"]::before{
     pointer-events: none;
 }
 
-.hi .ia>.ic>.adiptal-ui>section.active::before,
-.hi .ic .im[data-cs="ds"]>.d-tab-body>section.active::before,
-.hi .ic .im[data-cs="dr"]>.jv>section.active::before,
-.hi .ic .im[data-cs="dq"]>section.active::before,
-.hi .ic .im[data-cs="dt"]>section.active::before{
+._obf_b ._obf_au>._obf_r>.adiptal-ui>section.active::before,
+._obf_b ._obf_r ._obf_h[data-_obf_n="_obf_ch"]>.d-tab-body>section.active::before,
+._obf_b ._obf_r ._obf_h[data-_obf_n="_obf_cv"]>._obf_bd>section.active::before,
+._obf_b ._obf_r ._obf_h[data-_obf_n="_obf_cz"]>section.active::before,
+._obf_b ._obf_r ._obf_h[data-_obf_n="_obf_cw"]>section.active::before{
     border-color: var( --blue );
 }
 
 
 
-.hi .ic button>.io{
+._obf_b ._obf_r button>._obf_i{
     margin: 0;
     pointer-events: all;
 }
 
-.hi .ic section .jv{
+._obf_b ._obf_r section ._obf_bd{
     position: relative;
 }
 
-.hi .ic section section{
+._obf_b ._obf_r section section{
     min-height: 5rem;
     margin: 0;
     overflow: auto;
 }
 
-.hi .ic section .jv>.gy{
+._obf_b ._obf_r section ._obf_bd>._obf_bf{
     position: absolute;
     top: 0;
     right: 0;
@@ -785,47 +792,47 @@ button span[data-ct="1"]::before{
     display: none;
 }
 
-.hi .ic section .jv:hover>.gy{
+._obf_b ._obf_r section ._obf_bd:hover>._obf_bf{
     display: unset;
 }
 
-.hi .ic section .jv>.gy i{
+._obf_b ._obf_r section ._obf_bd>._obf_bf i{
     margin: 0;
     color: rgba( var( --primary-rgba ), .6);
 }
 
-.hi .ic section .jv>.io{
+._obf_b ._obf_r section ._obf_bd>._obf_i{
     width: calc( 100% - 3rem );
     margin: 1.5rem;
 }
 
-.hi .ic section .d-tab-heading button>.io{
+._obf_b ._obf_r section .d-tab-heading button>._obf_i{
     min-width: 5rem;
 }
 
 
 
 /* HOLDER */
-.hi .im{
+._obf_b ._obf_h{
     z-index: 1;
 }
 
-.hi .im[data-cs="eg"]:not(.d-checklist){
+._obf_b ._obf_h[data-_obf_n="_obf_bw"]:not(.d-checklist){
     list-style: disc;
 }
 
-.hi .im[data-cs="ef"]{
+._obf_b ._obf_h[data-_obf_n="_obf_cc"]{
     list-style: decimal;
 }
 
-.hi .im[data-cs="ej"]{
+._obf_b ._obf_h[data-_obf_n="_obf_ap"]{
     position: absolute;
     width: 100%;
     bottom: 0;
     margin: 0;
 }
 
-.hi .im[data-cs="ej"]>*{
+._obf_b ._obf_h[data-_obf_n="_obf_ap"]>*{
     position: absolute;
     top: -1rem;
     left: 0;
@@ -834,45 +841,45 @@ button span[data-ct="1"]::before{
     z-index: 1;
 }
 
-.hi .im[data-cs="ej"]>*>.hr{
+._obf_b ._obf_h[data-_obf_n="_obf_ap"]>*>.hr{
     background: rgba( var( --primary-rgba ), .1) !important;
 }
 
 
 
 /* FOOTER */
-.hi footer{
+._obf_b footer{
     display: flex;
 }
 
-.hi footer .la>a,
-.hi footer .la>button,
-.hi footer .la>.ja>button{
+._obf_b footer ._obf_o>a,
+._obf_b footer ._obf_o>button,
+._obf_b footer ._obf_o>._obf_p>button{
     font-size: .85rem;
 }
 
-.hi footer a{
+._obf_b footer a{
     padding: .25rem .5rem;
     background: rgba( var( --blue-rgba ), .2);
 }
 
-.hi footer a>i{
+._obf_b footer a>i{
     color: var( --blue );
 }
 
-.hi footer .jz{
+._obf_b footer ._obf_gp{
     background: var( --blue ) !important;
     color: var( --secondary );
 }
 
-.hi footer .jz>i{
+._obf_b footer ._obf_gp>i{
     color: var( --secondary );
 }
 
 
 
 /* COMMON MENUS BUTTON */
-.hi .im>button{
+._obf_b ._obf_h>button{
     position: absolute;
     right: 0;
     top: -1.75rem;
@@ -881,16 +888,16 @@ button span[data-ct="1"]::before{
     box-shadow: 0 0 0 .075rem rgba( var( --primary-rgba ), .1);
 }
 
-.hi .im>button,
-.hi .im>button i{
+._obf_b ._obf_h>button,
+._obf_b ._obf_h>button i{
     line-height: normal;
 }
 
 
 
 /* TITLE */
-.hi .io ~ label,
-.hi .io::before{
+._obf_b ._obf_i ~ label,
+._obf_b ._obf_i::before{
     content: attr( aria-label );
     position: absolute;
     top: 0;
@@ -902,13 +909,13 @@ button span[data-ct="1"]::before{
     color: rgba( var( --primary-rgba ), .6);
 }
 
-.hi .io:not(:focus):not(:empty) ~ label,
-.hi .io:not(:focus):not(:empty)::before{
+._obf_b ._obf_i:not(:focus):not(:empty) ~ label,
+._obf_b ._obf_i:not(:focus):not(:empty)::before{
     display: none;
 }
 
-.hi .io:focus[aria-label]::before,
-.hi .io:focus ~ label{
+._obf_b ._obf_i:focus[aria-label]::before,
+._obf_b ._obf_i:focus ~ label{
     position: absolute;
     display: inline-block;
     top: -1.5rem;
@@ -924,23 +931,23 @@ button span[data-ct="1"]::before{
 
 
 /* TEXTS */
-.hi .im:has(>pre.io){
+._obf_b ._obf_h:has(>pre._obf_i){
     padding: .25rem;
     box-shadow: inset 0 0 0 .075rem rgba( var( --primary-rgba ), .1);
 }
 
-.hi .im pre.io{
+._obf_b ._obf_h pre._obf_i{
     display: block;
     height: 15rem;
     resize: vertical;
     overflow: auto;
 }
 
-.hi .im pre.io:not(:focus) ~ label{
+._obf_b ._obf_h pre._obf_i:not(:focus) ~ label{
     left: .35rem;
 }
 
-.hi .io{
+._obf_b ._obf_i{
     position: relative;
     display: inline-block;
     width: 100%;
@@ -948,38 +955,38 @@ button span[data-ct="1"]::before{
     background: none;
 }
 
-.hi .im.io{
+._obf_b ._obf_h._obf_i{
     display: block;
     width: unset;
 }
 
-.hi .ic section.active .im.io:focus,
-.hi .ic section.active .im:focus-within>.io,
-.hi .ic section.active ul.im:focus-within .io,
-.hi .ic section.active ol.im:focus-within .io{
+._obf_b ._obf_r section.active ._obf_h._obf_i:focus,
+._obf_b ._obf_r section.active ._obf_h:focus-within>._obf_i,
+._obf_b ._obf_r section.active ul._obf_h:focus-within ._obf_i,
+._obf_b ._obf_r section.active ol._obf_h:focus-within ._obf_i{
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.hi .io:focus{
+._obf_b ._obf_i:focus{
     background: rgba( var( --primary-rgba ), .1) !important;
 }
 
-.hi .io *{
+._obf_b ._obf_i *{
     user-select: auto;
 }
 
-.hi .im[data-cs="eb"]{
+._obf_b ._obf_h[data-_obf_n="_obf_bp"]{
     font-size: 1.6rem;
     font-weight: var( --weight-strong-1 );
 }
 
-.hi .im[data-cs="eb"].le{
+._obf_b ._obf_h[data-_obf_n="_obf_bp"]._obf_ie{
     font-weight: var( --weight-normal );
 }
 
 @container adiptal-ui (width < 768px)
 {
-    .hi .im[data-cs="eb"]{
+    ._obf_b ._obf_h[data-_obf_n="_obf_bp"]{
         font-size: 1.5rem;
     }
 }
@@ -987,21 +994,21 @@ button span[data-ct="1"]::before{
 
 
 /* TEXT CONFIG */
-.hi .io *{
+._obf_b ._obf_i *{
     cursor: text;
 }
 
 
 
 /* CAPTION */
-.hi .im[data-cs="dp"]>.io:last-child,
-.hi .im[data-cs="dp"]:focus-within>.io:last-child,
-.hi .im[data-cs="ed"]>.io:last-child,
-.hi .im[data-cs="ed"]:focus-within>.io:last-child,
-.hi .im[data-cs="ei"]>.io:last-child,
-.hi .im[data-cs="ei"]:focus-within>.io:last-child,
-.hi .im[data-cs="dl"]>.io:last-child,
-.hi .im[data-cs="dl"]:focus-within>.io:last-child{
+._obf_b ._obf_h[data-_obf_n="_obf_x"]>._obf_i:last-child,
+._obf_b ._obf_h[data-_obf_n="_obf_x"]:focus-within>._obf_i:last-child,
+._obf_b ._obf_h[data-_obf_n="_obf_cd"]>._obf_i:last-child,
+._obf_b ._obf_h[data-_obf_n="_obf_cd"]:focus-within>._obf_i:last-child,
+._obf_b ._obf_h[data-_obf_n="_obf_ci"]>._obf_i:last-child,
+._obf_b ._obf_h[data-_obf_n="_obf_ci"]:focus-within>._obf_i:last-child,
+._obf_b ._obf_h[data-_obf_n="_obf_ba"]>._obf_i:last-child,
+._obf_b ._obf_h[data-_obf_n="_obf_ba"]:focus-within>._obf_i:last-child{
     font-style: italic;
     color: rgba( var( --primary-rgba ), .6);
 }
@@ -1009,18 +1016,18 @@ button span[data-ct="1"]::before{
 
 
 /* LISTS */
-.hi ul.d-checklist li::before{
+._obf_b ul.d-checklist li::before{
     font-family: "Font Awesome 5 Free";
     content: '\f0c8';
     font-weight: var( --weight-normal );
 }
 
-.hi ul.d-checklist li.checked::before{
+._obf_b ul.d-checklist li.checked::before{
     content: '\f00c';
     font-weight: var( --weight-strong-2 );
 }
 
-.hi .im li.io{
+._obf_b ._obf_h li._obf_i{
     display: list-item;
     width: calc( 100% - 1.5rem );
 }
@@ -1028,20 +1035,20 @@ button span[data-ct="1"]::before{
 
 
 /* TABLES */
-.hi .im .iq tr>.active{
+._obf_b ._obf_h ._obf_bx tr>.active{
     background: rgba( var( --primary-rgba ), .1);
 }
 
-.hi .im .iq tr .iu{
+._obf_b ._obf_h ._obf_bx tr ._obf_bo{
     display: none;
 }
 
-.hi .im:focus-within .iq tr .io{
+._obf_b ._obf_h:focus-within ._obf_bx tr ._obf_i{
     box-shadow: none;
 }
 
-.hi .im .iq th,
-.hi .im .iq td{
+._obf_b ._obf_h ._obf_bx th,
+._obf_b ._obf_h ._obf_bx td{
     display: table-cell;
     width: auto;
     padding: .5rem 1rem;
@@ -1049,19 +1056,19 @@ button span[data-ct="1"]::before{
 
 
 
-/* dn BUTTON */
-.hi a.im{
+/* _obf_aw BUTTON */
+._obf_b a._obf_h{
     cursor: auto;
 }
 
 
 
 /* MEDIA EMBED */
-.hi .im .kl{
+._obf_b ._obf_h ._obf_bi{
     display: none;
 }
 
-.hi .im .d-media-embed .ip{
+._obf_b ._obf_h .d-media-embed ._obf_dg{
     position: absolute;
     top: 0;
     left: 0;
@@ -1073,7 +1080,7 @@ button span[data-ct="1"]::before{
 
 
 /* -------------------------  CONTEXT MENU  ------------------------- */
-.iv{
+._obf_bk{
     padding: .25rem;
     width: max-content;
     display: none;
@@ -1083,15 +1090,15 @@ button span[data-ct="1"]::before{
     z-index: 9999;
 }
 
-.iv *{
+._obf_bk *{
     font-size: .85rem;
 }
 
-.iv .ja>button{
+._obf_bk ._obf_p>button{
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.iv .jl{
+._obf_bk ._obf_fh{
     display: flex;
     justify-content: center;
     gap: .25rem;
@@ -1099,51 +1106,51 @@ button span[data-ct="1"]::before{
 
 
 
-.iv.gw .jl>button{
+._obf_bk._obf_ht ._obf_fh>button{
     background: rgba( var( --primary-rgba ), .05);
 }
 
 
 
-.iv.gn .jl>*{
+._obf_bk._obf_bs ._obf_fh>*{
     flex: auto;
     text-align: center;
 }
 
-.iv.gn>button{
+._obf_bk._obf_bs>button{
     width: 100%;
     background: rgba( var( --primary-rgba ), .05);
 }
 
 
 
-.iv.gz li:not(:empty):not(:last-child){
+._obf_bk._obf_gk li:not(:empty):not(:last-child){
     margin-bottom: .25rem;
 }
 
-.iv.gz li button{
+._obf_bk._obf_gk li button{
     width: 100%;
     background: rgba( var( --primary-rgba ), .05);
 }
 
 
 
-.iv.gn>.ja{
+._obf_bk._obf_bs>._obf_p{
     display: block;
     width: 15rem;
 }
 
-.iv.gn>.ja:not(:last-child){
+._obf_bk._obf_bs>._obf_p:not(:last-child){
     margin-bottom: .25rem;
 }
 
-.iv.gn>.ja>button{
+._obf_bk._obf_bs>._obf_p>button{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.iv.gn .ja>ul{
+._obf_bk._obf_bs ._obf_p>ul{
     position: relative;
     top: 0 !important;
     left: 0;
@@ -1153,7 +1160,7 @@ button span[data-ct="1"]::before{
     overflow: unset !important;
 }
 
-.iv.gn .ja li{
+._obf_bk._obf_bs ._obf_p li{
     margin-top: .25rem;
 }
 /* -------------------------  END CONTEXT MENU  ------------------------- */
@@ -1161,17 +1168,17 @@ button span[data-ct="1"]::before{
 
 
 /* -------------------------  DROPDOWN  ------------------------- */
-.ja{
+._obf_p{
     position: relative;
     display: inline-block;
 }
 
-.ja>button{
+._obf_p>button{
     width: 100%;
     height: 100%;
 }
 
-.ja ul{
+._obf_p ul{
     position: absolute;
     height: max-content;
     width: max-content;
@@ -1181,21 +1188,21 @@ button span[data-ct="1"]::before{
     z-index: 3;
 }
 
-.ja>ul{
+._obf_p>ul{
     position: fixed;
 }
 
-.ja ul li{
+._obf_p ul li{
     display: block;
 }
 
-.ja ul li>.ja{
+._obf_p ul li>._obf_p{
     display: block;
 }
 
-.ja li>small,
-.ja li>label,
-.ja li>button{
+._obf_p li>small,
+._obf_p li>label,
+._obf_p li>button{
     position: relative;
     display: flex;
     align-items: center;
@@ -1205,17 +1212,17 @@ button span[data-ct="1"]::before{
     cursor: pointer;
 }
 
-.ja li>small{
+._obf_p li>small{
     font-size: .85rem;
     color: rgba( var( --primary-rgba ), .6);
     cursor: auto;
 }
 
-.ja li>label:not(.lf)>i{
+._obf_p li>label:not(._obf_gq)>i{
     margin-left: 1.5rem;
 }
 
-.hi .ja label::before{
+._obf_b ._obf_p label::before{
     content: '';
     position: absolute;
     top: 0;
@@ -1225,7 +1232,7 @@ button span[data-ct="1"]::before{
     margin: auto;
 }
 
-.hi .ja label:hover::before{
+._obf_b ._obf_p label:hover::before{
     background: rgba( var( --primary-rgba ), .05);
 }
 /* -------------------------  END DROPDOWN  ------------------------- */
@@ -1233,21 +1240,21 @@ button span[data-ct="1"]::before{
 
 
 /* -------------------------  SELECT  ------------------------- */
-.hf select{
+._obf_j select{
     width: 100%;
     padding: .25rem .5rem;
 }
 
-.kw{
+._obf_ao{
     position: relative;
     display: inline-block;
 }
 
-.kw>button{
+._obf_ao>button{
     width: 100%;
 }
 
-.kw ul{
+._obf_ao ul{
     position: fixed;
     height: max-content;
     width: max-content;
@@ -1257,12 +1264,12 @@ button span[data-ct="1"]::before{
     z-index: 3;
 }
 
-.kw ul li{
+._obf_ao ul li{
     display: block;
 }
 
-.kw li>label,
-.kw li>button{
+._obf_ao li>label,
+._obf_ao li>button{
     position: relative;
     display: block;
     padding: .25rem .5rem;
@@ -1275,7 +1282,7 @@ button span[data-ct="1"]::before{
 
 /* -------------------------  MODAL  ------------------------- */
 /* MODAL BOX */
-.jb{
+._obf_g{
     position: fixed;
     top: 0;
     left: 0;
@@ -1289,16 +1296,16 @@ button span[data-ct="1"]::before{
     z-index: 9994;
 }
 
-.jb[data-cq="dp"],
-.jb[data-cq="di"],
-.jb[data-cq="dj"],
-.jb[data-cq="dl"],
-.jb[data-cq="dm"],
-.jb[data-cq="dn"]{
+._obf_g[data-_obf_d="_obf_x"],
+._obf_g[data-_obf_d="_obf_cn"],
+._obf_g[data-_obf_d="_obf_co"],
+._obf_g[data-_obf_d="_obf_ba"],
+._obf_g[data-_obf_d="_obf_df"],
+._obf_g[data-_obf_d="_obf_aw"]{
     z-index: 9995;
 }
 
-.jb[data-cq="dh"]{
+._obf_g[data-_obf_d="_obf_af"]{
     justify-content: flex-start;
     align-items: flex-start;
     z-index: 9996;
@@ -1306,20 +1313,20 @@ button span[data-ct="1"]::before{
 }
 
 @media(width >= 768px) , (height >= 500px){
-    .jb[data-cq="dh"] .jc{
+    ._obf_g[data-_obf_d="_obf_af"] ._obf_s{
         max-width: 500px;
     }
 }
 
-.jb[data-cq="dp"].gj{
+._obf_g[data-_obf_d="_obf_x"]._obf_gr{
     z-index: 9997;
 }
 
-.st-dark-mode .jb{
+.st-dark-mode ._obf_g{
     background: rgba( var( --secondary-rgba ), .9);
 }
 
-.jb .jc{
+._obf_g ._obf_s{
     display: flex;
     flex-direction: column;
     width: 35rem;
@@ -1329,20 +1336,20 @@ button span[data-ct="1"]::before{
     box-shadow: 0 0 0 .075rem rgba( var( --primary-rgba ), .1);
 }
 
-.jb .jc.hb{
+._obf_g ._obf_s._obf_jv{
     width: 75%;
     max-height: 75%;
 }
 
-.jb .jc.hc{
+._obf_g ._obf_s._obf_fk{
     width: 100%;
     height: 100%;
     max-height: 100%;
 }
 
 @media(width < 768px) , (height < 500px){
-    .jb .jc,
-    .jb .jc.hb{
+    ._obf_g ._obf_s,
+    ._obf_g ._obf_s._obf_jv{
         width: 100%;
         height: 100%;
         max-height: 100%;
@@ -1353,7 +1360,7 @@ button span[data-ct="1"]::before{
 
 
 /* MODAL HEADER */
-.jb .jc>header h2{
+._obf_g ._obf_s>header h2{
     padding: .5rem 1rem;
     border-radius: 0;
     text-transform: uppercase;
@@ -1363,123 +1370,123 @@ button span[data-ct="1"]::before{
 
 
 /* MODAL CONTENTS */
-.jb .kn{
+._obf_g ._obf_q{
     flex: auto;
     padding: 1rem 1rem .5rem;
     overflow: auto;
 }
 
-.jb[data-cq="gd"] .kn{
+._obf_g[data-_obf_d="_obf_hu"] ._obf_q{
     padding: 1rem;
 }
 
-.jb[data-cq="dp"] .kn,
-.jb[data-cq="dz"] .kn,
-.jb[data-cq="dy"] .kn,
-.jb[data-cq="ea"] .kn{
+._obf_g[data-_obf_d="_obf_x"] ._obf_q,
+._obf_g[data-_obf_d="_obf_dy"] ._obf_q,
+._obf_g[data-_obf_d="_obf_dr"] ._obf_q,
+._obf_g[data-_obf_d="_obf_bl"] ._obf_q{
     padding: 0;
 }
 
 
 
 /* MODAL BUTTON */
-.jb .jc button{
+._obf_g ._obf_s button{
     padding: .25rem 1rem;
     background: rgba( var( --primary-rgba ), .1);
 }
-.jb .jc .kn button{
+._obf_g ._obf_s ._obf_q button{
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.jb .jc .ja ul button,
-.jb .jc .kw ul button{
+._obf_g ._obf_s ._obf_p ul button,
+._obf_g ._obf_s ._obf_ao ul button{
     background: none;
 }
 
-.jb .jc .kn>button,
-.jb .jc .kn .kw>button{
+._obf_g ._obf_s ._obf_q>button,
+._obf_g ._obf_s ._obf_q ._obf_ao>button{
     padding: .35rem 1rem;
 }
 
 
 
 /* MODAL TOOLBAR */
-.jb .jc>.kz{
+._obf_g ._obf_s>._obf_ag{
     padding: .5rem 1rem;
 }
 
-.jb .jc>.kz>ul{
+._obf_g ._obf_s>._obf_ag>ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: .5rem;
 }
 
-.jb .jc>.kz>ul li.jd{
+._obf_g ._obf_s>._obf_ag>ul li._obf_cu{
     margin-right: auto;
 }
 
-.jb .jc .jo{
+._obf_g ._obf_s ._obf_hv{
     display: none;
 }
 
 
 
 /* MODAL TABLE */
-.jb .kn>table{
+._obf_g ._obf_q>table{
     width: 100%;
     border-collapse: collapse;
 }
 
-.jb .kn>table tr>*{
+._obf_g ._obf_q>table tr>*{
     padding: .5rem 1rem;
     border: .25rem solid var( --secondary );
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.jb .kn>table th{
+._obf_g ._obf_q>table th{
     background: rgba( var( --primary-rgba ), .1);
 }
 
-.jb[data-cq="dk"] .jc{
+._obf_g[data-_obf_d="_obf_em"] ._obf_s{
     width: auto;
 }
 
 @media(width < 768px) , (height < 500px){
-    .jb[data-cq="dk"] .jc{
+    ._obf_g[data-_obf_d="_obf_em"] ._obf_s{
         width: 100%;
         height: 100%;
         max-height: 100%;
     }
 }
 
-.jb[data-cq="dk"] .kn>table tr>:first-of-type{
+._obf_g[data-_obf_d="_obf_em"] ._obf_q>table tr>:first-of-type{
     box-shadow: none;
 }
 
-.jb[data-cq="dk"] .kn>table tr>:last-of-type{
+._obf_g[data-_obf_d="_obf_em"] ._obf_q>table tr>:last-of-type{
     text-align: right;
 }
 
 
 
-/* MODAL dp */
-.jb[data-cq="dp"] .jc .kn{
+/* MODAL _obf_x */
+._obf_g[data-_obf_d="_obf_x"] ._obf_s ._obf_q{
     display: flex;
     flex-direction: column;
 }
 
 
-.jb[data-cq="dp"] .jj{
+._obf_g[data-_obf_d="_obf_x"] ._obf_gs{
     display: flex;
 }
 
-.jb[data-cq="dp"] .jj:first-of-type{
+._obf_g[data-_obf_d="_obf_x"] ._obf_gs:first-of-type{
     margin: 1rem 1rem .5rem;
     background: rgba( var( --primary-rgba ), .025);
 }
 
-.jb[data-cq="dp"] .jj:last-of-type{
+._obf_g[data-_obf_d="_obf_x"] ._obf_gs:last-of-type{
     flex: 100%;
     flex-direction: column;
     justify-content: space-between;
@@ -1487,17 +1494,17 @@ button span[data-ct="1"]::before{
 }
 
 
-.jb[data-cq="dp"] .jc .hf{
+._obf_g[data-_obf_d="_obf_x"] ._obf_s ._obf_j{
     flex: auto;
     margin: 0;
 }
 
-.jb[data-cq="dp"] .jc .hf:not(:focus-within){
+._obf_g[data-_obf_d="_obf_x"] ._obf_s ._obf_j:not(:focus-within){
     box-shadow: none;
 }
 
 
-.jb[data-cq="dp"] .jk{
+._obf_g[data-_obf_d="_obf_x"] ._obf_cp{
     display: grid;
     --images: 5;
     grid-template-columns: repeat( var( --images ) , minmax( 0 , 1fr ) );
@@ -1508,34 +1515,34 @@ button span[data-ct="1"]::before{
 
 @media(width < 550px)
 {
-    .jb[data-cq="dp"] .jk{
+    ._obf_g[data-_obf_d="_obf_x"] ._obf_cp{
         --images: 1;
     }
 }
 
 @media(width >= 550px) and (width < 768px)
 {
-    .jb[data-cq="dp"] .jk{
+    ._obf_g[data-_obf_d="_obf_x"] ._obf_cp{
         --images: 2;
     }
 }
 
 @media(width >= 768px) and (width < 992px)
 {
-    .jb[data-cq="dp"] .jk{
+    ._obf_g[data-_obf_d="_obf_x"] ._obf_cp{
         --images: 3;
     }
 }
 
 @media(width >= 992px) and (width < 1200px)
 {
-    .jb[data-cq="dp"] .jk{
+    ._obf_g[data-_obf_d="_obf_x"] ._obf_cp{
         --images: 4;
     }
 }
 
 
-.jb[data-cq="dp"] .jk img{
+._obf_g[data-_obf_d="_obf_x"] ._obf_cp img{
     display: block;
     width: 100%;
     aspect-ratio: 3/2;
@@ -1546,14 +1553,14 @@ button span[data-ct="1"]::before{
     cursor: pointer;
 }
 
-.jb[data-cq="dp"] .jk img.active{
+._obf_g[data-_obf_d="_obf_x"] ._obf_cp img.active{
     box-shadow: 0 0 0 .075rem var( --grey-3 );
 }
 
 
 
-/* MODAL dn */
-.jb[data-cq="dn"] .kn button{
+/* MODAL _obf_aw */
+._obf_g[data-_obf_d="_obf_aw"] ._obf_q button{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1564,47 +1571,47 @@ button span[data-ct="1"]::before{
 
 
 /* MODAL METADATA */
-.jb[data-cq="dh"] .kn>*{
+._obf_g[data-_obf_d="_obf_af"] ._obf_q>*{
     display: block;
     margin: 1rem auto;
 }
 
-.jb[data-cq="dh"] .kn>:first-child{
+._obf_g[data-_obf_d="_obf_af"] ._obf_q>:first-child{
     margin-top: .5rem;
 }
 
 /* COVER IMAGE */
-.jb[data-cq="dh"] .kn>.gi,
-.jb[data-cq="dh"] .kn .kw{
+._obf_g[data-_obf_d="_obf_af"] ._obf_q>._obf_cq,
+._obf_g[data-_obf_d="_obf_af"] ._obf_q ._obf_ao{
     position: relative;
 }
 
-.jb[data-cq="dh"] .kn>.gi img{
+._obf_g[data-_obf_d="_obf_af"] ._obf_q>._obf_cq img{
     width: 100%;
 }
 
-.jb[data-cq="dh"] .kn>.gi .gm{
+._obf_g[data-_obf_d="_obf_af"] ._obf_q>._obf_cq ._obf_ds{
     position: absolute;
     top: 1rem;
     right: 1rem;
     background: var( --secondary );
 }
 
-.jb[data-cq="dh"] .kn>.gi .gk{
+._obf_g[data-_obf_d="_obf_af"] ._obf_q>._obf_cq ._obf_gt{
     width: 100%;
     padding: .35rem 1rem;
 }
 
 /* SELECT */
-.jb[data-cq="dh"] .kn .kw{
+._obf_g[data-_obf_d="_obf_af"] ._obf_q ._obf_ao{
     width: 100%;
 }
 
-.jb[data-cq="dh"] .kn .kw>button>i{
+._obf_g[data-_obf_d="_obf_af"] ._obf_q ._obf_ao>button>i{
     float: right;
 }
 
-.jb[data-cq="dh"] .kn .kp{
+._obf_g[data-_obf_d="_obf_af"] ._obf_q ._obf_bt{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1613,18 +1620,18 @@ button span[data-ct="1"]::before{
     overflow: auto;
 }
 
-.jb[data-cq="dh"] .kn .kp button{
+._obf_g[data-_obf_d="_obf_af"] ._obf_q ._obf_bt button{
     display: flex;
     align-items: center;
 }
 
-.jb[data-cq="dh"] .kn .kp button *{
+._obf_g[data-_obf_d="_obf_af"] ._obf_q ._obf_bt button *{
     color: rgba( var( --primary-rgba ), .6);
     font-size: 1.1rem;
     font-weight: var( --weight-strong-2 );
 }
 
-.jb[data-cq="dh"] .kn .kp input{
+._obf_g[data-_obf_d="_obf_af"] ._obf_q ._obf_bt input{
     flex: auto;
     width: 100%;
     padding: .3rem .5rem;
@@ -1632,12 +1639,12 @@ button span[data-ct="1"]::before{
     box-shadow: inset 0 0 .2rem .1rem rgba( var( --primary-rgba ), .1);
 }
 
-.jb[data-cq="dh"] .kn .kp input:focus{
+._obf_g[data-_obf_d="_obf_af"] ._obf_q ._obf_bt input:focus{
     background: rgba( var( --blue-rgba ), .05);
     box-shadow: inset 0 0 .2rem .1rem rgba( var( --blue-rgba ), .2);
 }
 
-.jb[data-cq="dh"] .kn .kp input.disabled{
+._obf_g[data-_obf_d="_obf_af"] ._obf_q ._obf_bt input.disabled{
     display: none;
 }
 /* -------------------------  END MODAL  ------------------------- */
@@ -1645,7 +1652,7 @@ button span[data-ct="1"]::before{
 
 
 /* -------------------------  TOAST  ------------------------- */
-.jh{
+._obf_hw{
     position: fixed;
     top: 0;
     right: 0;
@@ -1665,12 +1672,12 @@ button span[data-ct="1"]::before{
 
 @media(width < 550px)
 {
-    .jh{
+    ._obf_hw{
         width: 100%;
     }
 }
 
-.ji{
+._obf_al{
     width: 100%;
     border-radius: .5rem;
     overflow: hidden;
@@ -1680,14 +1687,14 @@ button span[data-ct="1"]::before{
     pointer-events: all;
 }
 
-.ji.progress{
+._obf_al.progress{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
 }
 
-.ji.ld{
+._obf_al._obf_jy{
     animation: toastHide .15s linear forwards;
 }
 
@@ -1701,25 +1708,25 @@ button span[data-ct="1"]::before{
     100%   { transform: translateY(100%); opacity: 0; max-height: 0; }
 }
 
-.ji .lb:not(:empty){
+._obf_al ._obf_fl:not(:empty){
     padding: .5rem 1rem;
 }
 
-.ji .lb:only-child{
+._obf_al ._obf_fl:only-child{
     text-align: center;
 }
 
-.ji .lc{
+._obf_al ._obf_k{
     padding: 0 1rem .5rem;
 }
 
 
 /* TOAST TYPE */
-.ji .lb{
+._obf_al ._obf_fl{
     font-weight: var( --weight-strong-1 );
 }
 
-.ji::before{
+._obf_al::before{
     content: '';
     position: absolute;
     top: 0;
@@ -1729,44 +1736,44 @@ button span[data-ct="1"]::before{
     background: rgba( var( --primary-rgba ), .05);
 }
 
-.ji.danger::before{
+._obf_al.danger::before{
     background: rgba( var( --red-rgba ), .2);
 }
 
-.ji.warning::before{
+._obf_al.warning::before{
     background: rgba( var( --yellow-rgba ), .2);
 }
 
-.ji.success::before{
+._obf_al.success::before{
     background: rgba( var( --green-rgba ), .2);
 }
 
-.ji.info::before{
+._obf_al.info::before{
     background: rgba( var( --blue-rgba ), .2);
 }
 
-.ji.progress i{
+._obf_al.progress i{
     font-size: 1.15rem;
     color: var( --green );
 }
 
-.ji.progress .lb{
+._obf_al.progress ._obf_fl{
     padding: .5rem 0;
 }
 
-.ji.progress .lc{
+._obf_al.progress ._obf_k{
     display: none;
 }
 
 
 /* TOAST TOOLBARS */
-.ji .kz{
+._obf_al ._obf_ag{
     display: flex;
     padding: .5rem 1rem;
     gap: .5rem;
 }
 
-.ji .kz button{
+._obf_al ._obf_ag button{
     flex: auto;
     text-align: center;
     background: rgba( var( --primary-rgba ), .1);

@@ -255,11 +255,11 @@ lang_pack.json = {
 };
 
 lang_pack.label = function( key ){
-    return 'data-co="'+ key +'" aria-label="'+ lang_pack.json[ key ] +'"';
+    return 'data-_obf_dd="'+ key +'" aria-label="'+ lang_pack.json[ key ] +'"';
 }
 
 lang_pack.text = function( key ){
-    return 'data-cn="'+ key +'">'+ lang_pack.json[ key ];
+    return 'data-_obf_ak="'+ key +'">'+ lang_pack.json[ key ];
 }
 
 lang_pack.change = function(){
@@ -270,20 +270,20 @@ lang_pack.change = function(){
         });
     }
 
-    nh( '[data-co]' ).forEach(function(i){
-        i.mw({
-            'aria-label' : lang_pack.json[ i.mw( 'data-co' ) ]
+    $_( '[data-_obf_dd]' ).forEach(function(i){
+        i.$_attr({
+            'aria-label' : lang_pack.json[ i.$_attr( 'data-_obf_dd' ) ]
         });
     });
 
-    nh( '[data-cn]' ).forEach(function(i){
+    $_( '[data-_obf_ak]' ).forEach(function(i){
         var nodes = i.childNodes;
         if( nodes.length != 0 )
         {
             nodes[0].remove();
         }
 
-        i.nd( lang_pack.json[ i.mw( 'data-cn' ) ] );
+        i.$_prepend( lang_pack.json[ i.$_attr( 'data-_obf_ak' ) ] );
     });
 };
 
