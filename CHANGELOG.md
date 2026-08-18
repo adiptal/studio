@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ### 1.0.2
-  - Reliability improvementss
+  - Reliability improvements
 
 ### 1.0.1
   - Minor UI/UX Changes
